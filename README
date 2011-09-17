@@ -1,0 +1,22 @@
+Title: "Visualization of μ-CT scans of biological forms"
+
+Authors: Louis Dijkstra, Alex Theiakos
+
+1. Introduction
+
+The goal of this project is to provide a graphical user interface for exploring and interactively study micro CT scans (μ-CT) of scleratinian corals. The problem is two fold:
+
+    * Finding a way to visualize μ-CT scans in a resonable amount of time. μ-CT scans have a high resolutions. Data files tend to be large (between 2 and 5 GB), which makes it difficult to read and proceess this data on your average desktop workstation.
+
+    * Finding a way in which internal structures of these corals can be clearly identified. This calls for a graphical interface where the user has the possibility to explore and investigate the object, i.e zoom, pan, rotate etc
+
+Note that for this project to succeed, we first need to tackle the first objective, before we start with the second one.
+
+Approach
+
+2. Tools
+
+In order to tackle the first objective, we propose to try remote rendering, i.e. the visualization pipeline will be distributed over the multiple devices. We will use SARA, which has a Remote Visualization Service (RVS). The core of this application will be written in C++ using the Visualization Toolkit (VTK). Open MPI will be used for parallel computing. The eventual interface will be realized by making use of Qt (an interface framework suitable for C++). The interface will provide the user with the possibility to explore and investigate the μ-CT scans and to set up the connections between the SARA RVS and his local desktop automatically (this last feature is optional). The final product will be compiled for Unix and Mac OS X (The frameworks are in principal portable to any OS. If desired, it is possible to develop a Windows-port).
+
+
+
