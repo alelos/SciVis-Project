@@ -264,7 +264,7 @@ int Connector::returnVNCNode () {
 			printToStatusBar("New VNC Session is ready on the RVS") ; 
 			vncSessionReady = 1 ; 
 			/*find the node on which the VNC Session runs*/
-			found = output.find("v41-") ; 
+			found = output.find("v41-", found) ; 
 			std::string strNode (output, found + 4, 2);
 			printToStatusBar("Connecting to node " + strNode) ; 
 			node = atoi(strNode.c_str());
