@@ -1,0 +1,1 @@
+/usr/local/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/dcmtk.dir/dcmtk.o  -o dcmtk  -ldcmimage -ldcmimgle -ldcmdata -loflog -lofstd 
