@@ -1,0 +1,50 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/Connector.h
+stdlib.h
+-
+stdio.h
+-
+vector
+-
+list
+-
+algorithm
+-
+cmath
+-
+iostream
+-
+string
+-
+errno.h
+-
+string.h
+-
+string
+-
+cstdlib
+-
+sstream
+-
+libssh/libssh.h
+/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/libssh/libssh.h
+
+/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/connector.cpp
+Connector.h
+/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/Connector.h
+
+/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/main.cpp
+stdlib.h
+-
+stdio.h
+-
+Connector.h
+/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/Connector.h
+

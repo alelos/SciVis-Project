@@ -1,0 +1,27 @@
+/*
+ *  main.cpp
+ *  
+ *
+ *  Created by Louis Dijkstra on 29.09.11.
+ *  Copyright 2011 __MyCompanyName__. All rights reserved.
+ *
+ */
+
+
+#include <stdlib.h>
+#include <stdio.h> 
+
+#include "Connector.h"
+
+using namespace std;
+
+int main () {
+	Connector connector ("sccurs06", "", "");
+	connector.login() ; 
+	connector.executeRemoteCommand ("ls -l") ; 
+	//connector.startVNCSession("0", "10", "05") ; 
+	//connector.upload("FolderTry", "") ; 
+	//connector.connectToVNCSever (8) ;  
+	connector.logout() ; 
+	return 0 ; 
+}
