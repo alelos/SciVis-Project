@@ -19,8 +19,8 @@ int main () {
 	// arguments: username, password sara, password vnc 
 	Connector connector ("", "", "");
 	connector.login() ; 
-	connector.startVNCSession("0", "10", "05") ; 
-	int node = connector.returnVNCNode () ; 
+	int node = connector.startVNCSession("1", "00", "00") ; 
+	//int node = connector.returnVNCNode () ; 
 	sleep(5) ; 
 	connector.connectToVNCSever (node) ; 
 	connector.logout() ; 

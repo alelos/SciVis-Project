@@ -31,13 +31,14 @@ set node [lrange $argv 4 4]
 set timeout -1   
 
 # Setting up the connection
-spawn /opt/TurboVNC/bin/vncviewer -via $username@$ipaddr v41-$node:1
+# old spawn /opt/TurboVNC/bin/vncviewer -via $username@$ipaddr v40-$node:1
+spawn /opt/TurboVNC/bin/vncviewer v42-$node.rdr.sara.nl:1
 
 # Look for the password prompt
-expect "*?assword:*"
+#expect "*?assword:*"
 
 # Send password:
-send -- "$password\r"
+#send -- "$password\r"
 
 # Look for the password prompt
 expect "*?assword:*"
