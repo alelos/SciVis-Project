@@ -85,31 +85,6 @@ void Connector::login () {
 }
 
 /*
- * Sets up the channel used for communication between the local machine and the RVS-cluster
- *
- * CURRENTLY NOT USED - might be usefull later
- */
-void Connector::setUpChannel () {
-	// creates a new channel
-	channel = ssh_channel_new(sshSession);
-	if (channel == NULL) {
-		printToStatusBar("ERROR: Unable to set up channel between host and client...") ; 
-		exit(-1) ; 
-	}
-	
-	// links the channel to the current ssh session
-	int response = ssh_channel_open_session(channel);
-	if (response != SSH_OK) {
-		ssh_channel_free(channel);
-		printToStatusBar("ERROR: Unable to set up channel between host and client...") ; 
-		exit(-1) ;
-	}
-	
-	printToStatusBar("A new channel has been opened.") ; 
-}
-
-
-/*
  * Opens a channel, executes the given command and closes the channel again. 
  */
 void Connector::executeRemoteCommand (std::string command) {
@@ -188,96 +163,72 @@ void Connector::logout () {
  *		m - the number of minutes
  *		s - the number of second 
  *
- */
-void Connector::startVNCSession (std::string h, std::string m, std::string s) { 
-	std::string command = "qsub -lwalltime=" + h + ":" + m + ":" + s + " /usr/sara/bin/vnc-session" ;
-	executeRemoteCommand(command) ; 	
-} 
-
-/*
- * Returns the node where the new VNC session is being hosted. This node is important for setting up the VNC connection.
- * This routine checks several times if the new VNC session is ready by checking /usr/sara/bin/rvs_show
- * 
- * Returns:
+ * returns:
  *		node (int) - the node on which the new vnc session runs
  */
-int Connector::returnVNCNode () {
+int Connector::startVNCSession (std::string h, std::string m, std::string s) { 
+	std::string command = "/usr/sara/bin/rvs_vnc " + h + ":" + m + ":" + s ;
 	
-	int vncSessionReady = 0 ; // 1, if the VNC session is ready, otherwise 0. 
-	int node = - 1; // The node on which the new VNC session started
+	// creates a new channel
+	channel = ssh_channel_new(sshSession);
+	if (channel == NULL) {
+		printToStatusBar("ERROR: Unable to set up channel between host and client...") ; 
+		exit(-1) ; 
+	}
 	
-	/*Check if the VNC session is ready*/
-	while (vncSessionReady == 0) {
-		sleep(1) ; 
-		// creates a new channel
-		channel = ssh_channel_new(sshSession);
-		if (channel == NULL) {
-			printToStatusBar("ERROR: Unable to set up channel between host and client...") ; 
-			exit(-1) ; 
-		}
-		
-		// links the channel to the current ssh session
-		int response = ssh_channel_open_session(channel);
-		if (response != SSH_OK) {
-			ssh_channel_free(channel);
-			printToStatusBar("ERROR: Unable to set up channel between host and client...") ; 
-			exit(-1) ;
-		}
-		
-		// Executes the command
-		std::string command = "/usr/sara/bin/rvs_show" ;  
-		response = ssh_channel_request_exec(channel, command.c_str());
-		if (response != SSH_OK){
-			printToStatusBar("ERROR: Unable to execute the command on the host...") ; 
-			exit(-1) ;
-		}
-		
-		// Reading the result of the command and printing it to the status bar
-		char buffer[8192];
-		unsigned int nbytes;
-		
-		nbytes = ssh_channel_read(channel, buffer, sizeof(buffer), 0);
-		while (nbytes > 0)
-		{
-			if (fwrite(buffer, 1, nbytes, stdout) != nbytes)
-			{
-				ssh_channel_close(channel);
-				ssh_channel_free(channel);
-				printToStatusBar("ERROR: buffer to small to read all data") ;
-				break ; 
-			}
-			nbytes = ssh_channel_read(channel, buffer, sizeof(buffer), 0);
-		}
-		
-		if (nbytes < 0)
+	// links the channel to the current ssh session
+	int response = ssh_channel_open_session(channel);
+	if (response != SSH_OK) {
+		ssh_channel_free(channel);
+		printToStatusBar("ERROR: Unable to set up channel between host and client...") ; 
+		exit(-1) ;
+	}
+	
+	// Executes the command
+	printToStatusBar("A new channel has been opened.") ; 
+	response = ssh_channel_request_exec(channel, command.c_str());
+	if (response != SSH_OK){
+		printToStatusBar("ERROR: Unable to execute the command on the host...") ; 
+		exit(-1) ;
+	}
+	
+	// Reading the result of the command and printing it to the status bar
+	char buffer[8192];
+	unsigned int nbytes;
+	
+	nbytes = ssh_channel_read(channel, buffer, sizeof(buffer), 0);
+	while (nbytes > 0)
+	{
+		if (fwrite(buffer, 1, nbytes, stdout) != nbytes)
 		{
 			ssh_channel_close(channel);
 			ssh_channel_free(channel);
-			printToStatusBar("ERROR: buffer to small to read all data") ; 
+			printToStatusBar("ERROR: buffer to small to read all data") ;
+			break ; 
 		}
-		
-		/*Check whether the new VNC session is queued */
-		std::string output = buffer ; 
-		size_t found = output.find(username) ; 
-		
-		if (found != std::string::npos) {
-			printToStatusBar("New VNC Session is ready on the RVS") ; 
-			vncSessionReady = 1 ; 
-			/*find the node on which the VNC Session runs*/
-			found = output.find("v41-", found) ; 
-			std::string strNode (output, found + 4, 2);
-			printToStatusBar("Connecting to node " + strNode) ; 
-			node = atoi(strNode.c_str());
-		}
-				
-		ssh_channel_send_eof(channel);
-		ssh_channel_close(channel);		
+		nbytes = ssh_channel_read(channel, buffer, sizeof(buffer), 0);
 	}
 	
+	if (nbytes < 0)
+	{
+		ssh_channel_close(channel);
+		ssh_channel_free(channel);
+		printToStatusBar("ERROR: buffer to small to read all data") ; 
+	}
+	
+	/*Check whether the new VNC session is queued */
+	std::string output = buffer ; 
+	size_t found = output.find("v42-") ; 
+	std::string strNode (output, found + 4, 2) ; 
+	printToStatusBar("Connecting to node " + strNode) ; 
+	int node = atoi(strNode.c_str());
+		
+	// Closes the channel
+	ssh_channel_send_eof(channel);
+	ssh_channel_close(channel);		
+	
 	return node ; 
-}
-
-
+} 
 
 /*
  * Sends a folder/file to the remote RVS client from the local machine. 
@@ -307,7 +258,7 @@ void Connector::upload (std::string fileLocation, std::string resultingDirectory
  *	 - automatic detection if and where TurboVNC is installed...
  *
  * args:
- *		node - the node of the RVS on which the VNC server is running (1 - 8)
+ *		node - the node of the RVS on which the VNC server is running (1 - 16)
  */
 void Connector::connectToVNCSever (int node) {
 	std::string stringNode;

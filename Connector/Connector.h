@@ -36,12 +36,11 @@ public:
 	
 	void login () ; // handles the login into the RVS cluster
 	void logout () ; 
-	void startVNCSession (std::string h, std::string m, std::string s) ; // starts a new session in the RVS cluster
+	int startVNCSession (std::string h, std::string m, std::string s) ; // starts a new session in the RVS cluster
 	void executeRemoteCommand (std::string command) ; // Executes a command on the ssh server
 	void upload (std::string fileLocation, std::string resultingDirectory) ; // uploads a file to the given account
 	void printToStatusBar (std::string message) ; // prints a message to the status bar
 	void connectToVNCSever (int node) ; // connects to the newly created VNC server at the RVS
-	int returnVNCNode () ; // returns the node where the current VNC session is hosted
 	
 	inline void setUsername (std::string newUsername) {username = newUsername;}
 	inline void setPassword (std::string newPassword) {password = newPassword;}
@@ -53,7 +52,6 @@ public:
 	ssh_channel channel ; // the ssh channel which is used for communication between the local machine and RVS
 	
 private:
-	void setUpChannel () ; // sets up the channel (function called from login())
 	std::string username ; 
 	std::string password ; 
 	std::string vncPassword ; 
