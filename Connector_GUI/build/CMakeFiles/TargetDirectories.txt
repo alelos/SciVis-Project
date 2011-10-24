@@ -1,0 +1,1 @@
+/Users/alelos/Desktop/Connector/build/CMakeFiles/Connector.dir

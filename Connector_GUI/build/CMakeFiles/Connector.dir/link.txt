@@ -1,0 +1,1 @@
+/usr/bin/clang++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/Connector.dir/mainWindow.cpp.o CMakeFiles/Connector.dir/Connector.cpp.o CMakeFiles/Connector.dir/main.cpp.o CMakeFiles/Connector.dir/moc_mainWindow.cxx.o CMakeFiles/Connector.dir/moc_Connector.cxx.o  -o Connector.app/Contents/MacOS/Connector  -framework QtGui -framework QtCore -lssh 
