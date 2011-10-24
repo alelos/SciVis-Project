@@ -19,27 +19,20 @@
 
 #include <dcmtk/config/osconfig.h>
 #include <dcmtk/dcmimgle/dcmimage.h>
+#include <dcmtk/dcmimage/diregist.h>
 #include <iostream>
 
 int main(int argc, const char *argv[])
 {
-    DicomImage *image = new DicomImage("~/Desktop/brain/brain_001.dcm") ;
+    DicomImage *image = new DicomImage("~/Desktop/SciVis-Project/Examples/00001.dcm") ;
     double min, max ;
-    std::cout << DicomImage::getString(image->getStatus()) << std::endl ;
-    image->getMinMaxValues(min, max) ;
-    std::cout << "min value is: " << min << " max value is: " << max << std::endl ;
-    /*  
 
     if (image->getStatus() == EIS_Normal) {
-        Uint8 *pixelData = (Uint8 *)(image->getOutputData(8)) ;
-        if (pixelData != NULL) {
-            // do something
-            image->getMinMaxValues(min, max) ;
+        std::cout << "Success!" << std::endl ;
         }
-        else {
-            std::cerr << "Error bitch" << std::endl ; 
-        }
+    else {
+        std::cerr << "Error bitch" << std::endl ; 
     }
-    */
+
     return 0;
 }

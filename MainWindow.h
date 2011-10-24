@@ -27,6 +27,7 @@
 #include <QHBoxLayout>
 #include <string>
 #include <QPushButton>
+#include "histogramChart.h"
 #include "volumeRendering.h"
 
 
@@ -44,12 +45,13 @@ using std::cout ;
 class MainWindow : public QMainWindow {
     Q_OBJECT ;
     public:
-        MainWindow(string dirname, QWidget *parent = 0) ;       // Constructor 
+        MainWindow(string dirname, string filename, QWidget *parent = 0) ;       // Constructor 
         ~MainWindow() ;                         // Destructor 
         void createSettingsBox() ;                   // Function to set up the settings part of the gui
     private:
         QGroupBox *settingsBox ;                // Widget for the settings
         QWidget *center ;
         VolumeRendering vr ;
+        Histogram h ;
 } ;
 #endif   // ----- #ifndef MAINWINDOW_H_INC  ----- 

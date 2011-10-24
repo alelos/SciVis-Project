@@ -38,19 +38,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Applications/CMake 2.8-5.app/Contents/bin/cmake"
+CMAKE_COMMAND = "/Applications/CMake 2.8-4.app/Contents/bin/cmake"
 
 # The command to remove a file.
-RM = "/Applications/CMake 2.8-5.app/Contents/bin/cmake" -E remove -f
+RM = "/Applications/CMake 2.8-4.app/Contents/bin/cmake" -E remove -f
 
 # The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = "/Applications/CMake 2.8-5.app/Contents/bin/ccmake"
+CMAKE_EDIT_COMMAND = "/Applications/CMake 2.8-4.app/Contents/bin/ccmake"
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector"
+CMAKE_SOURCE_DIR = /Users/alelos/Desktop/SciVis-Project/Connector
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/src"
+CMAKE_BINARY_DIR = /Users/alelos/Desktop/SciVis-Project/Connector/src
 
 #=============================================================================
 # Target rules for target CMakeFiles/exec.dir
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Pr
 CMakeFiles/exec.dir/all:
 	$(MAKE) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/depend
 	$(MAKE) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/src/CMakeFiles"  1 2
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/alelos/Desktop/SciVis-Project/Connector/src/CMakeFiles  1 2
 	@echo "Built target exec"
 .PHONY : CMakeFiles/exec.dir/all
 
@@ -69,9 +69,9 @@ all: CMakeFiles/exec.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/exec.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/src/CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alelos/Desktop/SciVis-Project/Connector/src/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/exec.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/src/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alelos/Desktop/SciVis-Project/Connector/src/CMakeFiles 0
 .PHONY : CMakeFiles/exec.dir/rule
 
 # Convenience name for target.

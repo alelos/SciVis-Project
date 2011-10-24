@@ -255,8 +255,8 @@ int Connector::returnVNCNode () {
 			ssh_channel_free(channel);
 			printToStatusBar("ERROR: buffer to small to read all data") ; 
 		}
-		
-		/*Check whether the new VNC session is queued */
+
+	    /*Check whether the new VNC session is queued */
 		std::string output = buffer ; 
 		size_t found = output.find(username) ; 
 		
@@ -264,11 +264,11 @@ int Connector::returnVNCNode () {
 			printToStatusBar("New VNC Session is ready on the RVS") ; 
 			vncSessionReady = 1 ; 
 			/*find the node on which the VNC Session runs*/
-			found = output.find("v41-") ; 
+			found = output.find("v41-", found) ; 
 			std::string strNode (output, found + 4, 2);
 			printToStatusBar("Connecting to node " + strNode) ; 
 			node = atoi(strNode.c_str());
-		}
+		}	
 				
 		ssh_channel_send_eof(channel);
 		ssh_channel_close(channel);		

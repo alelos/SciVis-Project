@@ -131,7 +131,7 @@ CMAKE_OSX_DEPLOYMENT_TARGET:STRING=
 CMAKE_OSX_SYSROOT:PATH=/Developer/SDKs/MacOSX10.7.sdk
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Test
+CMAKE_PROJECT_NAME:STATIC=Project
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -177,12 +177,6 @@ Project_BINARY_DIR:STATIC=/Users/alelos/Desktop/SciVis-Project/Examples
 
 //Value Computed by CMake
 Project_SOURCE_DIR:STATIC=/Users/alelos/Desktop/SciVis-Project/Examples
-
-//Value Computed by CMake
-Test_BINARY_DIR:STATIC=/Users/alelos/Desktop/SciVis-Project/Examples
-
-//Value Computed by CMake
-Test_SOURCE_DIR:STATIC=/Users/alelos/Desktop/SciVis-Project/Examples
 
 
 ########################

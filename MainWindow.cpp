@@ -1,11 +1,12 @@
 #include "MainWindow.h"
 
-MainWindow::MainWindow(string dirname, QWidget *parent) : vr(dirname) {
+MainWindow::MainWindow(string dirname, string filename, QWidget *parent) : vr(dirname), h(filename) {
     center = new QWidget(this) ;       /* center widget, holds everything together */
     createSettingsBox() ;
 
     QGridLayout *centerLayout = new QGridLayout ;
     centerLayout->addWidget(vr.getRenderWindow(), 0, 1) ;
+    centerLayout->addWidget(h.getRenderWindow(),1, 1) ;
     centerLayout->addWidget(settingsBox, 0, 2) ;
 
     setWindowTitle("Corals") ;

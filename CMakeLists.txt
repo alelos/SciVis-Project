@@ -15,8 +15,8 @@ find_package(Qt4 REQUIRED)
 include(${QT_USE_FILE})
  
 # Set source and header files here
-SET(CoralsSourceFiles MainWindow.cpp volumeRendering.cpp main.cpp)
-SET(CoralHeaderFiles MainWindow.h volumeRendering.h)
+SET(CoralsSourceFiles MainWindow.cpp volumeRendering.cpp histogramChart.cpp main.cpp)
+SET(CoralHeaderFiles MainWindow.h volumeRendering.h histogramChart.h)
  
 QT4_WRAP_CPP(MOCSrcs ${CoralHeaderFiles})
 

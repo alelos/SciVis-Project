@@ -26,19 +26,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Applications/CMake 2.8-5.app/Contents/bin/cmake"
+CMAKE_COMMAND = "/Applications/CMake 2.8-4.app/Contents/bin/cmake"
 
 # The command to remove a file.
-RM = "/Applications/CMake 2.8-5.app/Contents/bin/cmake" -E remove -f
+RM = "/Applications/CMake 2.8-4.app/Contents/bin/cmake" -E remove -f
 
 # The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = "/Applications/CMake 2.8-5.app/Contents/bin/ccmake"
+CMAKE_EDIT_COMMAND = "/Applications/CMake 2.8-4.app/Contents/bin/ccmake"
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector"
+CMAKE_SOURCE_DIR = /Users/alelos/Desktop/SciVis-Project/Connector
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/src"
+CMAKE_BINARY_DIR = /Users/alelos/Desktop/SciVis-Project/Connector/src
 
 # Include any dependencies generated for this target.
 include CMakeFiles/exec.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/exec.dir/flags.make
 
 CMakeFiles/exec.dir/main.cpp.o: CMakeFiles/exec.dir/flags.make
 CMakeFiles/exec.dir/main.cpp.o: ../main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/src/CMakeFiles" $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/alelos/Desktop/SciVis-Project/Connector/src/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/exec.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/exec.dir/main.cpp.o -c "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/main.cpp"
+	/usr/local/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/exec.dir/main.cpp.o -c /Users/alelos/Desktop/SciVis-Project/Connector/main.cpp
 
 CMakeFiles/exec.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exec.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/main.cpp" > CMakeFiles/exec.dir/main.cpp.i
+	/usr/local/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/alelos/Desktop/SciVis-Project/Connector/main.cpp > CMakeFiles/exec.dir/main.cpp.i
 
 CMakeFiles/exec.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exec.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/main.cpp" -o CMakeFiles/exec.dir/main.cpp.s
+	/usr/local/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/alelos/Desktop/SciVis-Project/Connector/main.cpp -o CMakeFiles/exec.dir/main.cpp.s
 
 CMakeFiles/exec.dir/main.cpp.o.requires:
 .PHONY : CMakeFiles/exec.dir/main.cpp.o.requires
@@ -74,17 +74,17 @@ CMakeFiles/exec.dir/main.cpp.o.provides.build: CMakeFiles/exec.dir/main.cpp.o
 
 CMakeFiles/exec.dir/connector.cpp.o: CMakeFiles/exec.dir/flags.make
 CMakeFiles/exec.dir/connector.cpp.o: ../connector.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/src/CMakeFiles" $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/alelos/Desktop/SciVis-Project/Connector/src/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/exec.dir/connector.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/exec.dir/connector.cpp.o -c "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/connector.cpp"
+	/usr/local/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/exec.dir/connector.cpp.o -c /Users/alelos/Desktop/SciVis-Project/Connector/connector.cpp
 
 CMakeFiles/exec.dir/connector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exec.dir/connector.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/connector.cpp" > CMakeFiles/exec.dir/connector.cpp.i
+	/usr/local/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/alelos/Desktop/SciVis-Project/Connector/connector.cpp > CMakeFiles/exec.dir/connector.cpp.i
 
 CMakeFiles/exec.dir/connector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exec.dir/connector.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/connector.cpp" -o CMakeFiles/exec.dir/connector.cpp.s
+	/usr/local/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/alelos/Desktop/SciVis-Project/Connector/connector.cpp -o CMakeFiles/exec.dir/connector.cpp.s
 
 CMakeFiles/exec.dir/connector.cpp.o.requires:
 .PHONY : CMakeFiles/exec.dir/connector.cpp.o.requires
@@ -123,6 +123,6 @@ CMakeFiles/exec.dir/clean:
 .PHONY : CMakeFiles/exec.dir/clean
 
 CMakeFiles/exec.dir/depend:
-	cd "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/src" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector" "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector" "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/src" "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/src" "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/src/CMakeFiles/exec.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /Users/alelos/Desktop/SciVis-Project/Connector/src && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alelos/Desktop/SciVis-Project/Connector /Users/alelos/Desktop/SciVis-Project/Connector /Users/alelos/Desktop/SciVis-Project/Connector/src /Users/alelos/Desktop/SciVis-Project/Connector/src /Users/alelos/Desktop/SciVis-Project/Connector/src/CMakeFiles/exec.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/exec.dir/depend
 

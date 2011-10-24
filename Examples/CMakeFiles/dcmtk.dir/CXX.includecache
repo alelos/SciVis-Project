@@ -11,6 +11,8 @@ dcmtk/config/osconfig.h
 -
 dcmtk/dcmimgle/dcmimage.h
 -
+dcmtk/dcmimage/diregist.h
+-
 iostream
 -
 

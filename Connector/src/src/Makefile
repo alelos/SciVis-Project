@@ -30,19 +30,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Applications/CMake 2.8-5.app/Contents/bin/cmake"
+CMAKE_COMMAND = "/Applications/CMake 2.8-4.app/Contents/bin/cmake"
 
 # The command to remove a file.
-RM = "/Applications/CMake 2.8-5.app/Contents/bin/cmake" -E remove -f
+RM = "/Applications/CMake 2.8-4.app/Contents/bin/cmake" -E remove -f
 
 # The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = "/Applications/CMake 2.8-5.app/Contents/bin/ccmake"
+CMAKE_EDIT_COMMAND = "/Applications/CMake 2.8-4.app/Contents/bin/ccmake"
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector"
+CMAKE_SOURCE_DIR = /Users/alelos/Desktop/SciVis-Project/Connector
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/src"
+CMAKE_BINARY_DIR = /Users/alelos/Desktop/SciVis-Project/Connector/src
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -50,7 +50,7 @@ CMAKE_BINARY_DIR = "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Pr
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	"/Applications/CMake 2.8-5.app/Contents/bin/ccmake" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"/Applications/CMake 2.8-4.app/Contents/bin/ccmake" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -60,7 +60,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"/Applications/CMake 2.8-5.app/Contents/bin/cmake" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"/Applications/CMake 2.8-4.app/Contents/bin/cmake" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -69,14 +69,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/src" && $(CMAKE_COMMAND) -E cmake_progress_start "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/src/CMakeFiles" "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/src/src/CMakeFiles/progress.marks"
-	cd "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/src" && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/src/CMakeFiles" 0
+	cd /Users/alelos/Desktop/SciVis-Project/Connector/src && $(CMAKE_COMMAND) -E cmake_progress_start /Users/alelos/Desktop/SciVis-Project/Connector/src/CMakeFiles /Users/alelos/Desktop/SciVis-Project/Connector/src/src/CMakeFiles/progress.marks
+	cd /Users/alelos/Desktop/SciVis-Project/Connector/src && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alelos/Desktop/SciVis-Project/Connector/src/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/src" && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /Users/alelos/Desktop/SciVis-Project/Connector/src && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -85,17 +85,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/src" && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /Users/alelos/Desktop/SciVis-Project/Connector/src && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/src" && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /Users/alelos/Desktop/SciVis-Project/Connector/src && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/src" && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/alelos/Desktop/SciVis-Project/Connector/src && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -117,6 +117,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/src" && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/alelos/Desktop/SciVis-Project/Connector/src && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

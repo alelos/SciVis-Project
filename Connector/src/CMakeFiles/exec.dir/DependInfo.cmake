@@ -4,8 +4,8 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/connector.cpp" "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/src/CMakeFiles/exec.dir/connector.cpp.o"
-  "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/main.cpp" "/Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/src/CMakeFiles/exec.dir/main.cpp.o"
+  "/Users/alelos/Desktop/SciVis-Project/Connector/connector.cpp" "/Users/alelos/Desktop/SciVis-Project/Connector/src/CMakeFiles/exec.dir/connector.cpp.o"
+  "/Users/alelos/Desktop/SciVis-Project/Connector/main.cpp" "/Users/alelos/Desktop/SciVis-Project/Connector/src/CMakeFiles/exec.dir/main.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

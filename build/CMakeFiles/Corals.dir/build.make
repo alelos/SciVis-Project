@@ -95,9 +95,32 @@ CMakeFiles/Corals.dir/volumeRendering.cpp.o.provides: CMakeFiles/Corals.dir/volu
 
 CMakeFiles/Corals.dir/volumeRendering.cpp.o.provides.build: CMakeFiles/Corals.dir/volumeRendering.cpp.o
 
+CMakeFiles/Corals.dir/histogramChart.cpp.o: CMakeFiles/Corals.dir/flags.make
+CMakeFiles/Corals.dir/histogramChart.cpp.o: ../histogramChart.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/alelos/Desktop/SciVis-Project/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Corals.dir/histogramChart.cpp.o"
+	/usr/bin/clang++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Corals.dir/histogramChart.cpp.o -c /Users/alelos/Desktop/SciVis-Project/histogramChart.cpp
+
+CMakeFiles/Corals.dir/histogramChart.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Corals.dir/histogramChart.cpp.i"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/alelos/Desktop/SciVis-Project/histogramChart.cpp > CMakeFiles/Corals.dir/histogramChart.cpp.i
+
+CMakeFiles/Corals.dir/histogramChart.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Corals.dir/histogramChart.cpp.s"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/alelos/Desktop/SciVis-Project/histogramChart.cpp -o CMakeFiles/Corals.dir/histogramChart.cpp.s
+
+CMakeFiles/Corals.dir/histogramChart.cpp.o.requires:
+.PHONY : CMakeFiles/Corals.dir/histogramChart.cpp.o.requires
+
+CMakeFiles/Corals.dir/histogramChart.cpp.o.provides: CMakeFiles/Corals.dir/histogramChart.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Corals.dir/build.make CMakeFiles/Corals.dir/histogramChart.cpp.o.provides.build
+.PHONY : CMakeFiles/Corals.dir/histogramChart.cpp.o.provides
+
+CMakeFiles/Corals.dir/histogramChart.cpp.o.provides.build: CMakeFiles/Corals.dir/histogramChart.cpp.o
+
 CMakeFiles/Corals.dir/main.cpp.o: CMakeFiles/Corals.dir/flags.make
 CMakeFiles/Corals.dir/main.cpp.o: ../main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/alelos/Desktop/SciVis-Project/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/alelos/Desktop/SciVis-Project/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Corals.dir/main.cpp.o"
 	/usr/bin/clang++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Corals.dir/main.cpp.o -c /Users/alelos/Desktop/SciVis-Project/main.cpp
 
@@ -120,7 +143,7 @@ CMakeFiles/Corals.dir/main.cpp.o.provides.build: CMakeFiles/Corals.dir/main.cpp.
 
 CMakeFiles/Corals.dir/moc_MainWindow.cxx.o: CMakeFiles/Corals.dir/flags.make
 CMakeFiles/Corals.dir/moc_MainWindow.cxx.o: moc_MainWindow.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/alelos/Desktop/SciVis-Project/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/alelos/Desktop/SciVis-Project/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Corals.dir/moc_MainWindow.cxx.o"
 	/usr/bin/clang++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Corals.dir/moc_MainWindow.cxx.o -c /Users/alelos/Desktop/SciVis-Project/build/moc_MainWindow.cxx
 
@@ -143,7 +166,7 @@ CMakeFiles/Corals.dir/moc_MainWindow.cxx.o.provides.build: CMakeFiles/Corals.dir
 
 CMakeFiles/Corals.dir/moc_volumeRendering.cxx.o: CMakeFiles/Corals.dir/flags.make
 CMakeFiles/Corals.dir/moc_volumeRendering.cxx.o: moc_volumeRendering.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/alelos/Desktop/SciVis-Project/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/alelos/Desktop/SciVis-Project/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Corals.dir/moc_volumeRendering.cxx.o"
 	/usr/bin/clang++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Corals.dir/moc_volumeRendering.cxx.o -c /Users/alelos/Desktop/SciVis-Project/build/moc_volumeRendering.cxx
 
@@ -164,32 +187,64 @@ CMakeFiles/Corals.dir/moc_volumeRendering.cxx.o.provides: CMakeFiles/Corals.dir/
 
 CMakeFiles/Corals.dir/moc_volumeRendering.cxx.o.provides.build: CMakeFiles/Corals.dir/moc_volumeRendering.cxx.o
 
+CMakeFiles/Corals.dir/moc_histogramChart.cxx.o: CMakeFiles/Corals.dir/flags.make
+CMakeFiles/Corals.dir/moc_histogramChart.cxx.o: moc_histogramChart.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/alelos/Desktop/SciVis-Project/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Corals.dir/moc_histogramChart.cxx.o"
+	/usr/bin/clang++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Corals.dir/moc_histogramChart.cxx.o -c /Users/alelos/Desktop/SciVis-Project/build/moc_histogramChart.cxx
+
+CMakeFiles/Corals.dir/moc_histogramChart.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Corals.dir/moc_histogramChart.cxx.i"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/alelos/Desktop/SciVis-Project/build/moc_histogramChart.cxx > CMakeFiles/Corals.dir/moc_histogramChart.cxx.i
+
+CMakeFiles/Corals.dir/moc_histogramChart.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Corals.dir/moc_histogramChart.cxx.s"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/alelos/Desktop/SciVis-Project/build/moc_histogramChart.cxx -o CMakeFiles/Corals.dir/moc_histogramChart.cxx.s
+
+CMakeFiles/Corals.dir/moc_histogramChart.cxx.o.requires:
+.PHONY : CMakeFiles/Corals.dir/moc_histogramChart.cxx.o.requires
+
+CMakeFiles/Corals.dir/moc_histogramChart.cxx.o.provides: CMakeFiles/Corals.dir/moc_histogramChart.cxx.o.requires
+	$(MAKE) -f CMakeFiles/Corals.dir/build.make CMakeFiles/Corals.dir/moc_histogramChart.cxx.o.provides.build
+.PHONY : CMakeFiles/Corals.dir/moc_histogramChart.cxx.o.provides
+
+CMakeFiles/Corals.dir/moc_histogramChart.cxx.o.provides.build: CMakeFiles/Corals.dir/moc_histogramChart.cxx.o
+
 moc_MainWindow.cxx: ../MainWindow.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/alelos/Desktop/SciVis-Project/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/alelos/Desktop/SciVis-Project/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_MainWindow.cxx"
 	/Developer/Tools/Qt/moc -I/usr/local/include/vtk-5.8 -I/usr/include -F/Library/Frameworks -I/Library/Frameworks/QtGui.framework/Headers -I/Library/Frameworks/QtCore.framework/Headers -DQT_GUI_LIB -DQT_CORE_LIB -o /Users/alelos/Desktop/SciVis-Project/build/moc_MainWindow.cxx /Users/alelos/Desktop/SciVis-Project/MainWindow.h
 
 moc_volumeRendering.cxx: ../volumeRendering.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/alelos/Desktop/SciVis-Project/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/alelos/Desktop/SciVis-Project/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_volumeRendering.cxx"
 	/Developer/Tools/Qt/moc -I/usr/local/include/vtk-5.8 -I/usr/include -F/Library/Frameworks -I/Library/Frameworks/QtGui.framework/Headers -I/Library/Frameworks/QtCore.framework/Headers -DQT_GUI_LIB -DQT_CORE_LIB -o /Users/alelos/Desktop/SciVis-Project/build/moc_volumeRendering.cxx /Users/alelos/Desktop/SciVis-Project/volumeRendering.h
+
+moc_histogramChart.cxx: ../histogramChart.h
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/alelos/Desktop/SciVis-Project/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_histogramChart.cxx"
+	/Developer/Tools/Qt/moc -I/usr/local/include/vtk-5.8 -I/usr/include -F/Library/Frameworks -I/Library/Frameworks/QtGui.framework/Headers -I/Library/Frameworks/QtCore.framework/Headers -DQT_GUI_LIB -DQT_CORE_LIB -o /Users/alelos/Desktop/SciVis-Project/build/moc_histogramChart.cxx /Users/alelos/Desktop/SciVis-Project/histogramChart.h
 
 # Object files for target Corals
 Corals_OBJECTS = \
 "CMakeFiles/Corals.dir/MainWindow.cpp.o" \
 "CMakeFiles/Corals.dir/volumeRendering.cpp.o" \
+"CMakeFiles/Corals.dir/histogramChart.cpp.o" \
 "CMakeFiles/Corals.dir/main.cpp.o" \
 "CMakeFiles/Corals.dir/moc_MainWindow.cxx.o" \
-"CMakeFiles/Corals.dir/moc_volumeRendering.cxx.o"
+"CMakeFiles/Corals.dir/moc_volumeRendering.cxx.o" \
+"CMakeFiles/Corals.dir/moc_histogramChart.cxx.o"
 
 # External object files for target Corals
 Corals_EXTERNAL_OBJECTS =
 
 Corals: CMakeFiles/Corals.dir/MainWindow.cpp.o
 Corals: CMakeFiles/Corals.dir/volumeRendering.cpp.o
+Corals: CMakeFiles/Corals.dir/histogramChart.cpp.o
 Corals: CMakeFiles/Corals.dir/main.cpp.o
 Corals: CMakeFiles/Corals.dir/moc_MainWindow.cxx.o
 Corals: CMakeFiles/Corals.dir/moc_volumeRendering.cxx.o
+Corals: CMakeFiles/Corals.dir/moc_histogramChart.cxx.o
 Corals: /usr/local/lib/vtk-5.8/libvtkCommon.5.8.0.dylib
 Corals: /usr/local/lib/vtk-5.8/libvtkFiltering.5.8.0.dylib
 Corals: /usr/local/lib/vtk-5.8/libvtkImaging.5.8.0.dylib
@@ -245,9 +300,11 @@ CMakeFiles/Corals.dir/build: Corals
 
 CMakeFiles/Corals.dir/requires: CMakeFiles/Corals.dir/MainWindow.cpp.o.requires
 CMakeFiles/Corals.dir/requires: CMakeFiles/Corals.dir/volumeRendering.cpp.o.requires
+CMakeFiles/Corals.dir/requires: CMakeFiles/Corals.dir/histogramChart.cpp.o.requires
 CMakeFiles/Corals.dir/requires: CMakeFiles/Corals.dir/main.cpp.o.requires
 CMakeFiles/Corals.dir/requires: CMakeFiles/Corals.dir/moc_MainWindow.cxx.o.requires
 CMakeFiles/Corals.dir/requires: CMakeFiles/Corals.dir/moc_volumeRendering.cxx.o.requires
+CMakeFiles/Corals.dir/requires: CMakeFiles/Corals.dir/moc_histogramChart.cxx.o.requires
 .PHONY : CMakeFiles/Corals.dir/requires
 
 CMakeFiles/Corals.dir/clean:
@@ -256,6 +313,7 @@ CMakeFiles/Corals.dir/clean:
 
 CMakeFiles/Corals.dir/depend: moc_MainWindow.cxx
 CMakeFiles/Corals.dir/depend: moc_volumeRendering.cxx
+CMakeFiles/Corals.dir/depend: moc_histogramChart.cxx
 	cd /Users/alelos/Desktop/SciVis-Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alelos/Desktop/SciVis-Project /Users/alelos/Desktop/SciVis-Project /Users/alelos/Desktop/SciVis-Project/build /Users/alelos/Desktop/SciVis-Project/build /Users/alelos/Desktop/SciVis-Project/build/CMakeFiles/Corals.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Corals.dir/depend
 

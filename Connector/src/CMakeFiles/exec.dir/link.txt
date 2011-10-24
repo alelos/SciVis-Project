@@ -1,1 +1,1 @@
-/usr/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/exec.dir/main.cpp.o CMakeFiles/exec.dir/connector.cpp.o  -o exec  -lssh 
+/usr/local/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/exec.dir/main.cpp.o CMakeFiles/exec.dir/connector.cpp.o  -o exec  -lssh 

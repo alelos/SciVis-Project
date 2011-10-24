@@ -1,4 +1,4 @@
-# Install script for directory: /Users/louisdijkstra/UvA/Scientific Visualization /SciVis-Project/Connector/src
+# Install script for directory: /Users/alelos/Desktop/SciVis-Project/Connector/src
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)

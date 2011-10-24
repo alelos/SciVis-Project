@@ -1,4 +1,4 @@
-The system is: Darwin - 11.1.0 - i386
+The system is: Darwin - 11.2.0 - i386
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /usr/local/bin/gcc 
 Build flags: 
@@ -58,10 +58,10 @@ Thread model: posix
 gcc version 4.6.0 (GCC) 
 COMPILER_PATH=/usr/local/libexec/gcc/x86_64-apple-darwin10.7.0/4.6.0/:/usr/local/libexec/gcc/x86_64-apple-darwin10.7.0/4.6.0/:/usr/local/libexec/gcc/x86_64-apple-darwin10.7.0/:/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0/:/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/
 LIBRARY_PATH=/usr/local/qwt-6.0.0/lib/:/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0/:/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0/../../../:/usr/lib/
-COLLECT_GCC_OPTIONS='-mmacosx-version-min=10.7.1' '-v' '-o' 'cmTryCompileExec' '-mtune=core2'
- /usr/local/libexec/gcc/x86_64-apple-darwin10.7.0/4.6.0/collect2 -dynamic -arch x86_64 -macosx_version_min 10.7.1 -weak_reference_mismatches non-weak -o cmTryCompileExec -lcrt1.10.5.o -L/usr/local/qwt-6.0.0/lib -L/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0 -L/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0/../../.. -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o -no_compact_unwind -lSystem -lgcc_ext.10.5 -lgcc -lSystem -v
+COLLECT_GCC_OPTIONS='-mmacosx-version-min=10.7.2' '-v' '-o' 'cmTryCompileExec' '-mtune=core2'
+ /usr/local/libexec/gcc/x86_64-apple-darwin10.7.0/4.6.0/collect2 -dynamic -arch x86_64 -macosx_version_min 10.7.2 -weak_reference_mismatches non-weak -o cmTryCompileExec -lcrt1.10.5.o -L/usr/local/qwt-6.0.0/lib -L/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0 -L/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0/../../.. -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o -no_compact_unwind -lSystem -lgcc_ext.10.5 -lgcc -lSystem -v
 collect2 version 4.6.0 (x86_64 Darwin)
-/usr/bin/ld -dynamic -arch x86_64 -macosx_version_min 10.7.1 -weak_reference_mismatches non-weak -o cmTryCompileExec -lcrt1.10.5.o -L/usr/local/qwt-6.0.0/lib -L/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0 -L/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0/../../.. -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o -no_compact_unwind -lSystem -lgcc_ext.10.5 -lgcc -lSystem -v
+/usr/bin/ld -dynamic -arch x86_64 -macosx_version_min 10.7.2 -weak_reference_mismatches non-weak -o cmTryCompileExec -lcrt1.10.5.o -L/usr/local/qwt-6.0.0/lib -L/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0 -L/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0/../../.. -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o -no_compact_unwind -lSystem -lgcc_ext.10.5 -lgcc -lSystem -v
 @(#)PROGRAM:ld  PROJECT:ld64-123.2.1
 Library search paths:
 	/usr/local/qwt-6.0.0/lib
@@ -95,14 +95,14 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 4.6.0 (GCC) ]
   ignore line: [COMPILER_PATH=/usr/local/libexec/gcc/x86_64-apple-darwin10.7.0/4.6.0/:/usr/local/libexec/gcc/x86_64-apple-darwin10.7.0/4.6.0/:/usr/local/libexec/gcc/x86_64-apple-darwin10.7.0/:/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0/:/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/]
   ignore line: [LIBRARY_PATH=/usr/local/qwt-6.0.0/lib/:/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0/:/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0/../../../:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-mmacosx-version-min=10.7.1' '-v' '-o' 'cmTryCompileExec' '-mtune=core2']
-  link line: [ /usr/local/libexec/gcc/x86_64-apple-darwin10.7.0/4.6.0/collect2 -dynamic -arch x86_64 -macosx_version_min 10.7.1 -weak_reference_mismatches non-weak -o cmTryCompileExec -lcrt1.10.5.o -L/usr/local/qwt-6.0.0/lib -L/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0 -L/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0/../../.. -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o -no_compact_unwind -lSystem -lgcc_ext.10.5 -lgcc -lSystem -v]
+  ignore line: [COLLECT_GCC_OPTIONS='-mmacosx-version-min=10.7.2' '-v' '-o' 'cmTryCompileExec' '-mtune=core2']
+  link line: [ /usr/local/libexec/gcc/x86_64-apple-darwin10.7.0/4.6.0/collect2 -dynamic -arch x86_64 -macosx_version_min 10.7.2 -weak_reference_mismatches non-weak -o cmTryCompileExec -lcrt1.10.5.o -L/usr/local/qwt-6.0.0/lib -L/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0 -L/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0/../../.. -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o -no_compact_unwind -lSystem -lgcc_ext.10.5 -lgcc -lSystem -v]
     arg [/usr/local/libexec/gcc/x86_64-apple-darwin10.7.0/4.6.0/collect2] ==> ignore
     arg [-dynamic] ==> ignore
     arg [-arch] ==> ignore
     arg [x86_64] ==> ignore
     arg [-macosx_version_min] ==> ignore
-    arg [10.7.1] ==> ignore
+    arg [10.7.2] ==> ignore
     arg [-weak_reference_mismatches] ==> ignore
     arg [non-weak] ==> ignore
     arg [-o] ==> ignore
@@ -165,10 +165,10 @@ Thread model: posix
 gcc version 4.6.0 (GCC) 
 COMPILER_PATH=/usr/local/libexec/gcc/x86_64-apple-darwin10.7.0/4.6.0/:/usr/local/libexec/gcc/x86_64-apple-darwin10.7.0/4.6.0/:/usr/local/libexec/gcc/x86_64-apple-darwin10.7.0/:/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0/:/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/
 LIBRARY_PATH=/usr/local/qwt-6.0.0/lib/:/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0/:/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0/../../../:/usr/lib/
-COLLECT_GCC_OPTIONS='-mmacosx-version-min=10.7.1' '-v' '-o' 'cmTryCompileExec' '-shared-libgcc' '-mtune=core2'
- /usr/local/libexec/gcc/x86_64-apple-darwin10.7.0/4.6.0/collect2 -dynamic -arch x86_64 -macosx_version_min 10.7.1 -weak_reference_mismatches non-weak -o cmTryCompileExec -lcrt1.10.5.o -L/usr/local/qwt-6.0.0/lib -L/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0 -L/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0/../../.. -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -no_compact_unwind -lSystem -lgcc_ext.10.5 -lgcc -lSystem -v
+COLLECT_GCC_OPTIONS='-mmacosx-version-min=10.7.2' '-v' '-o' 'cmTryCompileExec' '-shared-libgcc' '-mtune=core2'
+ /usr/local/libexec/gcc/x86_64-apple-darwin10.7.0/4.6.0/collect2 -dynamic -arch x86_64 -macosx_version_min 10.7.2 -weak_reference_mismatches non-weak -o cmTryCompileExec -lcrt1.10.5.o -L/usr/local/qwt-6.0.0/lib -L/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0 -L/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0/../../.. -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -no_compact_unwind -lSystem -lgcc_ext.10.5 -lgcc -lSystem -v
 collect2 version 4.6.0 (x86_64 Darwin)
-/usr/bin/ld -dynamic -arch x86_64 -macosx_version_min 10.7.1 -weak_reference_mismatches non-weak -o cmTryCompileExec -lcrt1.10.5.o -L/usr/local/qwt-6.0.0/lib -L/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0 -L/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0/../../.. -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -no_compact_unwind -lSystem -lgcc_ext.10.5 -lgcc -lSystem -v
+/usr/bin/ld -dynamic -arch x86_64 -macosx_version_min 10.7.2 -weak_reference_mismatches non-weak -o cmTryCompileExec -lcrt1.10.5.o -L/usr/local/qwt-6.0.0/lib -L/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0 -L/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0/../../.. -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -no_compact_unwind -lSystem -lgcc_ext.10.5 -lgcc -lSystem -v
 @(#)PROGRAM:ld  PROJECT:ld64-123.2.1
 Library search paths:
 	/usr/local/qwt-6.0.0/lib
@@ -202,14 +202,14 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 4.6.0 (GCC) ]
   ignore line: [COMPILER_PATH=/usr/local/libexec/gcc/x86_64-apple-darwin10.7.0/4.6.0/:/usr/local/libexec/gcc/x86_64-apple-darwin10.7.0/4.6.0/:/usr/local/libexec/gcc/x86_64-apple-darwin10.7.0/:/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0/:/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/]
   ignore line: [LIBRARY_PATH=/usr/local/qwt-6.0.0/lib/:/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0/:/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0/../../../:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-mmacosx-version-min=10.7.1' '-v' '-o' 'cmTryCompileExec' '-shared-libgcc' '-mtune=core2']
-  link line: [ /usr/local/libexec/gcc/x86_64-apple-darwin10.7.0/4.6.0/collect2 -dynamic -arch x86_64 -macosx_version_min 10.7.1 -weak_reference_mismatches non-weak -o cmTryCompileExec -lcrt1.10.5.o -L/usr/local/qwt-6.0.0/lib -L/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0 -L/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0/../../.. -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -no_compact_unwind -lSystem -lgcc_ext.10.5 -lgcc -lSystem -v]
+  ignore line: [COLLECT_GCC_OPTIONS='-mmacosx-version-min=10.7.2' '-v' '-o' 'cmTryCompileExec' '-shared-libgcc' '-mtune=core2']
+  link line: [ /usr/local/libexec/gcc/x86_64-apple-darwin10.7.0/4.6.0/collect2 -dynamic -arch x86_64 -macosx_version_min 10.7.2 -weak_reference_mismatches non-weak -o cmTryCompileExec -lcrt1.10.5.o -L/usr/local/qwt-6.0.0/lib -L/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0 -L/usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0/../../.. -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -no_compact_unwind -lSystem -lgcc_ext.10.5 -lgcc -lSystem -v]
     arg [/usr/local/libexec/gcc/x86_64-apple-darwin10.7.0/4.6.0/collect2] ==> ignore
     arg [-dynamic] ==> ignore
     arg [-arch] ==> ignore
     arg [x86_64] ==> ignore
     arg [-macosx_version_min] ==> ignore
-    arg [10.7.1] ==> ignore
+    arg [10.7.2] ==> ignore
     arg [-weak_reference_mismatches] ==> ignore
     arg [non-weak] ==> ignore
     arg [-o] ==> ignore

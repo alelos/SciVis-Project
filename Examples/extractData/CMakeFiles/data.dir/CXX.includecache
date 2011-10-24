@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/alelos/Desktop/SciVis-Project/Examples/extractData/main.cpp
+iostream
+-
+gdcm-2.0/gdcmImageReader.h
+-
+gdcm-2.0/gdcmReader.h
+-
+gdcm-2.0/gdcmFile.h
+-
+gdcm-2.0/gdcmImage.h
+-
+string
+-
+

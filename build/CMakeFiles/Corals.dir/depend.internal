@@ -4,6 +4,7 @@
 CMakeFiles/Corals.dir/MainWindow.cpp.o
  /Library/Frameworks/QtCore.framework/Headers/QCoreApplication
  /Library/Frameworks/QtCore.framework/Headers/QObject
+ /Library/Frameworks/QtCore.framework/Headers/QObject.h
  /Library/Frameworks/QtCore.framework/Headers/qcoreapplication.h
  /Library/Frameworks/QtCore.framework/Headers/qobject.h
  /Library/Frameworks/QtGui.framework/Headers/QGridLayout
@@ -18,6 +19,7 @@ CMakeFiles/Corals.dir/MainWindow.cpp.o
  /Library/Frameworks/QtGui.framework/Headers/qwidget.h
  /Users/alelos/Desktop/SciVis-Project/MainWindow.cpp
  /Users/alelos/Desktop/SciVis-Project/MainWindow.h
+ /Users/alelos/Desktop/SciVis-Project/histogramChart.h
  /Users/alelos/Desktop/SciVis-Project/volumeRendering.h
  /usr/local/include/vtk-5.8/QVTKInteractor.h
  /usr/local/include/vtk-5.8/QVTKWidget.h
@@ -27,19 +29,23 @@ CMakeFiles/Corals.dir/MainWindow.cpp.o
  /usr/local/include/vtk-5.8/vtkAbstractMapper3D.h
  /usr/local/include/vtk-5.8/vtkAbstractVolumeMapper.h
  /usr/local/include/vtk-5.8/vtkActor.h
+ /usr/local/include/vtk-5.8/vtkActor2D.h
  /usr/local/include/vtk-5.8/vtkActorCollection.h
  /usr/local/include/vtk-5.8/vtkAlgorithm.h
  /usr/local/include/vtk-5.8/vtkCollection.h
  /usr/local/include/vtk-5.8/vtkColorTransferFunction.h
  /usr/local/include/vtk-5.8/vtkCommand.h
  /usr/local/include/vtk-5.8/vtkConfigure.h
+ /usr/local/include/vtk-5.8/vtkCoordinate.h
  /usr/local/include/vtk-5.8/vtkDICOMImageReader.h
  /usr/local/include/vtk-5.8/vtkDataObject.h
  /usr/local/include/vtk-5.8/vtkDataSet.h
  /usr/local/include/vtk-5.8/vtkIOStream.h
  /usr/local/include/vtk-5.8/vtkIOStreamFwd.h
+ /usr/local/include/vtk-5.8/vtkImageAccumulate.h
  /usr/local/include/vtk-5.8/vtkImageAlgorithm.h
  /usr/local/include/vtk-5.8/vtkImageData.h
+ /usr/local/include/vtk-5.8/vtkImageExtractComponents.h
  /usr/local/include/vtk-5.8/vtkImageReader2.h
  /usr/local/include/vtk-5.8/vtkImageReslice.h
  /usr/local/include/vtk-5.8/vtkIndent.h
@@ -74,9 +80,65 @@ CMakeFiles/Corals.dir/MainWindow.cpp.o
  /usr/local/include/vtk-5.8/vtkWeakPointerBase.h
  /usr/local/include/vtk-5.8/vtkWin32Header.h
  /usr/local/include/vtk-5.8/vtkWindow.h
+ /usr/local/include/vtk-5.8/vtkXYPlotActor.h
+CMakeFiles/Corals.dir/histogramChart.cpp.o
+ /Library/Frameworks/QtCore.framework/Headers/QObject.h
+ /Users/alelos/Desktop/SciVis-Project/histogramChart.cpp
+ /Users/alelos/Desktop/SciVis-Project/histogramChart.h
+ /usr/local/include/vtk-5.8/QVTKInteractor.h
+ /usr/local/include/vtk-5.8/QVTKWidget.h
+ /usr/local/include/vtk-5.8/QVTKWin32Header.h
+ /usr/local/include/vtk-5.8/vtkABI.h
+ /usr/local/include/vtk-5.8/vtkActor.h
+ /usr/local/include/vtk-5.8/vtkActor2D.h
+ /usr/local/include/vtk-5.8/vtkActorCollection.h
+ /usr/local/include/vtk-5.8/vtkAlgorithm.h
+ /usr/local/include/vtk-5.8/vtkCollection.h
+ /usr/local/include/vtk-5.8/vtkCommand.h
+ /usr/local/include/vtk-5.8/vtkConfigure.h
+ /usr/local/include/vtk-5.8/vtkCoordinate.h
+ /usr/local/include/vtk-5.8/vtkDICOMImageReader.h
+ /usr/local/include/vtk-5.8/vtkDataObject.h
+ /usr/local/include/vtk-5.8/vtkDataSet.h
+ /usr/local/include/vtk-5.8/vtkIOStream.h
+ /usr/local/include/vtk-5.8/vtkIOStreamFwd.h
+ /usr/local/include/vtk-5.8/vtkImageAccumulate.h
+ /usr/local/include/vtk-5.8/vtkImageAlgorithm.h
+ /usr/local/include/vtk-5.8/vtkImageData.h
+ /usr/local/include/vtk-5.8/vtkImageExtractComponents.h
+ /usr/local/include/vtk-5.8/vtkImageReader2.h
+ /usr/local/include/vtk-5.8/vtkIndent.h
+ /usr/local/include/vtk-5.8/vtkOStrStreamWrapper.h
+ /usr/local/include/vtk-5.8/vtkOStreamWrapper.h
+ /usr/local/include/vtk-5.8/vtkObject.h
+ /usr/local/include/vtk-5.8/vtkObjectBase.h
+ /usr/local/include/vtk-5.8/vtkProp.h
+ /usr/local/include/vtk-5.8/vtkProp3D.h
+ /usr/local/include/vtk-5.8/vtkPropCollection.h
+ /usr/local/include/vtk-5.8/vtkRenderWindow.h
+ /usr/local/include/vtk-5.8/vtkRenderWindowInteractor.h
+ /usr/local/include/vtk-5.8/vtkRenderer.h
+ /usr/local/include/vtk-5.8/vtkSetGet.h
+ /usr/local/include/vtk-5.8/vtkSmartPointer.h
+ /usr/local/include/vtk-5.8/vtkSmartPointerBase.h
+ /usr/local/include/vtk-5.8/vtkStructuredData.h
+ /usr/local/include/vtk-5.8/vtkSystemIncludes.h
+ /usr/local/include/vtk-5.8/vtkTDxConfigure.h
+ /usr/local/include/vtk-5.8/vtkThreadedImageAlgorithm.h
+ /usr/local/include/vtk-5.8/vtkTimeStamp.h
+ /usr/local/include/vtk-5.8/vtkToolkits.h
+ /usr/local/include/vtk-5.8/vtkType.h
+ /usr/local/include/vtk-5.8/vtkViewport.h
+ /usr/local/include/vtk-5.8/vtkVolume.h
+ /usr/local/include/vtk-5.8/vtkVolumeCollection.h
+ /usr/local/include/vtk-5.8/vtkWeakPointerBase.h
+ /usr/local/include/vtk-5.8/vtkWin32Header.h
+ /usr/local/include/vtk-5.8/vtkWindow.h
+ /usr/local/include/vtk-5.8/vtkXYPlotActor.h
 CMakeFiles/Corals.dir/main.cpp.o
  /Library/Frameworks/QtCore.framework/Headers/QCoreApplication
  /Library/Frameworks/QtCore.framework/Headers/QObject
+ /Library/Frameworks/QtCore.framework/Headers/QObject.h
  /Library/Frameworks/QtCore.framework/Headers/qcoreapplication.h
  /Library/Frameworks/QtCore.framework/Headers/qobject.h
  /Library/Frameworks/QtGui.framework/Headers/QApplication
@@ -92,6 +154,7 @@ CMakeFiles/Corals.dir/main.cpp.o
  /Library/Frameworks/QtGui.framework/Headers/qpushbutton.h
  /Library/Frameworks/QtGui.framework/Headers/qwidget.h
  /Users/alelos/Desktop/SciVis-Project/MainWindow.h
+ /Users/alelos/Desktop/SciVis-Project/histogramChart.h
  /Users/alelos/Desktop/SciVis-Project/main.cpp
  /Users/alelos/Desktop/SciVis-Project/volumeRendering.h
  /usr/local/include/vtk-5.8/QVTKInteractor.h
@@ -102,19 +165,23 @@ CMakeFiles/Corals.dir/main.cpp.o
  /usr/local/include/vtk-5.8/vtkAbstractMapper3D.h
  /usr/local/include/vtk-5.8/vtkAbstractVolumeMapper.h
  /usr/local/include/vtk-5.8/vtkActor.h
+ /usr/local/include/vtk-5.8/vtkActor2D.h
  /usr/local/include/vtk-5.8/vtkActorCollection.h
  /usr/local/include/vtk-5.8/vtkAlgorithm.h
  /usr/local/include/vtk-5.8/vtkCollection.h
  /usr/local/include/vtk-5.8/vtkColorTransferFunction.h
  /usr/local/include/vtk-5.8/vtkCommand.h
  /usr/local/include/vtk-5.8/vtkConfigure.h
+ /usr/local/include/vtk-5.8/vtkCoordinate.h
  /usr/local/include/vtk-5.8/vtkDICOMImageReader.h
  /usr/local/include/vtk-5.8/vtkDataObject.h
  /usr/local/include/vtk-5.8/vtkDataSet.h
  /usr/local/include/vtk-5.8/vtkIOStream.h
  /usr/local/include/vtk-5.8/vtkIOStreamFwd.h
+ /usr/local/include/vtk-5.8/vtkImageAccumulate.h
  /usr/local/include/vtk-5.8/vtkImageAlgorithm.h
  /usr/local/include/vtk-5.8/vtkImageData.h
+ /usr/local/include/vtk-5.8/vtkImageExtractComponents.h
  /usr/local/include/vtk-5.8/vtkImageReader2.h
  /usr/local/include/vtk-5.8/vtkImageReslice.h
  /usr/local/include/vtk-5.8/vtkIndent.h
@@ -149,9 +216,11 @@ CMakeFiles/Corals.dir/main.cpp.o
  /usr/local/include/vtk-5.8/vtkWeakPointerBase.h
  /usr/local/include/vtk-5.8/vtkWin32Header.h
  /usr/local/include/vtk-5.8/vtkWindow.h
+ /usr/local/include/vtk-5.8/vtkXYPlotActor.h
 CMakeFiles/Corals.dir/moc_MainWindow.cxx.o
  /Library/Frameworks/QtCore.framework/Headers/QCoreApplication
  /Library/Frameworks/QtCore.framework/Headers/QObject
+ /Library/Frameworks/QtCore.framework/Headers/QObject.h
  /Library/Frameworks/QtCore.framework/Headers/qcoreapplication.h
  /Library/Frameworks/QtCore.framework/Headers/qobject.h
  /Library/Frameworks/QtGui.framework/Headers/QGridLayout
@@ -165,6 +234,7 @@ CMakeFiles/Corals.dir/moc_MainWindow.cxx.o
  /Library/Frameworks/QtGui.framework/Headers/qpushbutton.h
  /Library/Frameworks/QtGui.framework/Headers/qwidget.h
  /Users/alelos/Desktop/SciVis-Project/build/../MainWindow.h
+ /Users/alelos/Desktop/SciVis-Project/build/../histogramChart.h
  /Users/alelos/Desktop/SciVis-Project/build/../volumeRendering.h
  /Users/alelos/Desktop/SciVis-Project/build/moc_MainWindow.cxx
  /usr/local/include/vtk-5.8/QVTKInteractor.h
@@ -175,19 +245,23 @@ CMakeFiles/Corals.dir/moc_MainWindow.cxx.o
  /usr/local/include/vtk-5.8/vtkAbstractMapper3D.h
  /usr/local/include/vtk-5.8/vtkAbstractVolumeMapper.h
  /usr/local/include/vtk-5.8/vtkActor.h
+ /usr/local/include/vtk-5.8/vtkActor2D.h
  /usr/local/include/vtk-5.8/vtkActorCollection.h
  /usr/local/include/vtk-5.8/vtkAlgorithm.h
  /usr/local/include/vtk-5.8/vtkCollection.h
  /usr/local/include/vtk-5.8/vtkColorTransferFunction.h
  /usr/local/include/vtk-5.8/vtkCommand.h
  /usr/local/include/vtk-5.8/vtkConfigure.h
+ /usr/local/include/vtk-5.8/vtkCoordinate.h
  /usr/local/include/vtk-5.8/vtkDICOMImageReader.h
  /usr/local/include/vtk-5.8/vtkDataObject.h
  /usr/local/include/vtk-5.8/vtkDataSet.h
  /usr/local/include/vtk-5.8/vtkIOStream.h
  /usr/local/include/vtk-5.8/vtkIOStreamFwd.h
+ /usr/local/include/vtk-5.8/vtkImageAccumulate.h
  /usr/local/include/vtk-5.8/vtkImageAlgorithm.h
  /usr/local/include/vtk-5.8/vtkImageData.h
+ /usr/local/include/vtk-5.8/vtkImageExtractComponents.h
  /usr/local/include/vtk-5.8/vtkImageReader2.h
  /usr/local/include/vtk-5.8/vtkImageReslice.h
  /usr/local/include/vtk-5.8/vtkIndent.h
@@ -222,6 +296,61 @@ CMakeFiles/Corals.dir/moc_MainWindow.cxx.o
  /usr/local/include/vtk-5.8/vtkWeakPointerBase.h
  /usr/local/include/vtk-5.8/vtkWin32Header.h
  /usr/local/include/vtk-5.8/vtkWindow.h
+ /usr/local/include/vtk-5.8/vtkXYPlotActor.h
+CMakeFiles/Corals.dir/moc_histogramChart.cxx.o
+ /Library/Frameworks/QtCore.framework/Headers/QObject.h
+ /Users/alelos/Desktop/SciVis-Project/build/../histogramChart.h
+ /Users/alelos/Desktop/SciVis-Project/build/moc_histogramChart.cxx
+ /usr/local/include/vtk-5.8/QVTKInteractor.h
+ /usr/local/include/vtk-5.8/QVTKWidget.h
+ /usr/local/include/vtk-5.8/QVTKWin32Header.h
+ /usr/local/include/vtk-5.8/vtkABI.h
+ /usr/local/include/vtk-5.8/vtkActor.h
+ /usr/local/include/vtk-5.8/vtkActor2D.h
+ /usr/local/include/vtk-5.8/vtkActorCollection.h
+ /usr/local/include/vtk-5.8/vtkAlgorithm.h
+ /usr/local/include/vtk-5.8/vtkCollection.h
+ /usr/local/include/vtk-5.8/vtkCommand.h
+ /usr/local/include/vtk-5.8/vtkConfigure.h
+ /usr/local/include/vtk-5.8/vtkCoordinate.h
+ /usr/local/include/vtk-5.8/vtkDICOMImageReader.h
+ /usr/local/include/vtk-5.8/vtkDataObject.h
+ /usr/local/include/vtk-5.8/vtkDataSet.h
+ /usr/local/include/vtk-5.8/vtkIOStream.h
+ /usr/local/include/vtk-5.8/vtkIOStreamFwd.h
+ /usr/local/include/vtk-5.8/vtkImageAccumulate.h
+ /usr/local/include/vtk-5.8/vtkImageAlgorithm.h
+ /usr/local/include/vtk-5.8/vtkImageData.h
+ /usr/local/include/vtk-5.8/vtkImageExtractComponents.h
+ /usr/local/include/vtk-5.8/vtkImageReader2.h
+ /usr/local/include/vtk-5.8/vtkIndent.h
+ /usr/local/include/vtk-5.8/vtkOStrStreamWrapper.h
+ /usr/local/include/vtk-5.8/vtkOStreamWrapper.h
+ /usr/local/include/vtk-5.8/vtkObject.h
+ /usr/local/include/vtk-5.8/vtkObjectBase.h
+ /usr/local/include/vtk-5.8/vtkProp.h
+ /usr/local/include/vtk-5.8/vtkProp3D.h
+ /usr/local/include/vtk-5.8/vtkPropCollection.h
+ /usr/local/include/vtk-5.8/vtkRenderWindow.h
+ /usr/local/include/vtk-5.8/vtkRenderWindowInteractor.h
+ /usr/local/include/vtk-5.8/vtkRenderer.h
+ /usr/local/include/vtk-5.8/vtkSetGet.h
+ /usr/local/include/vtk-5.8/vtkSmartPointer.h
+ /usr/local/include/vtk-5.8/vtkSmartPointerBase.h
+ /usr/local/include/vtk-5.8/vtkStructuredData.h
+ /usr/local/include/vtk-5.8/vtkSystemIncludes.h
+ /usr/local/include/vtk-5.8/vtkTDxConfigure.h
+ /usr/local/include/vtk-5.8/vtkThreadedImageAlgorithm.h
+ /usr/local/include/vtk-5.8/vtkTimeStamp.h
+ /usr/local/include/vtk-5.8/vtkToolkits.h
+ /usr/local/include/vtk-5.8/vtkType.h
+ /usr/local/include/vtk-5.8/vtkViewport.h
+ /usr/local/include/vtk-5.8/vtkVolume.h
+ /usr/local/include/vtk-5.8/vtkVolumeCollection.h
+ /usr/local/include/vtk-5.8/vtkWeakPointerBase.h
+ /usr/local/include/vtk-5.8/vtkWin32Header.h
+ /usr/local/include/vtk-5.8/vtkWindow.h
+ /usr/local/include/vtk-5.8/vtkXYPlotActor.h
 CMakeFiles/Corals.dir/moc_volumeRendering.cxx.o
  /Library/Frameworks/QtCore.framework/Headers/QObject
  /Library/Frameworks/QtCore.framework/Headers/qobject.h

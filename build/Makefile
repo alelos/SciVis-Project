@@ -135,6 +135,30 @@ MainWindow.cpp.s:
 	$(MAKE) -f CMakeFiles/Corals.dir/build.make CMakeFiles/Corals.dir/MainWindow.cpp.s
 .PHONY : MainWindow.cpp.s
 
+histogramChart.o: histogramChart.cpp.o
+.PHONY : histogramChart.o
+
+# target to build an object file
+histogramChart.cpp.o:
+	$(MAKE) -f CMakeFiles/Corals.dir/build.make CMakeFiles/Corals.dir/histogramChart.cpp.o
+.PHONY : histogramChart.cpp.o
+
+histogramChart.i: histogramChart.cpp.i
+.PHONY : histogramChart.i
+
+# target to preprocess a source file
+histogramChart.cpp.i:
+	$(MAKE) -f CMakeFiles/Corals.dir/build.make CMakeFiles/Corals.dir/histogramChart.cpp.i
+.PHONY : histogramChart.cpp.i
+
+histogramChart.s: histogramChart.cpp.s
+.PHONY : histogramChart.s
+
+# target to generate assembly for a file
+histogramChart.cpp.s:
+	$(MAKE) -f CMakeFiles/Corals.dir/build.make CMakeFiles/Corals.dir/histogramChart.cpp.s
+.PHONY : histogramChart.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -182,6 +206,30 @@ moc_MainWindow.s: moc_MainWindow.cxx.s
 moc_MainWindow.cxx.s:
 	$(MAKE) -f CMakeFiles/Corals.dir/build.make CMakeFiles/Corals.dir/moc_MainWindow.cxx.s
 .PHONY : moc_MainWindow.cxx.s
+
+moc_histogramChart.o: moc_histogramChart.cxx.o
+.PHONY : moc_histogramChart.o
+
+# target to build an object file
+moc_histogramChart.cxx.o:
+	$(MAKE) -f CMakeFiles/Corals.dir/build.make CMakeFiles/Corals.dir/moc_histogramChart.cxx.o
+.PHONY : moc_histogramChart.cxx.o
+
+moc_histogramChart.i: moc_histogramChart.cxx.i
+.PHONY : moc_histogramChart.i
+
+# target to preprocess a source file
+moc_histogramChart.cxx.i:
+	$(MAKE) -f CMakeFiles/Corals.dir/build.make CMakeFiles/Corals.dir/moc_histogramChart.cxx.i
+.PHONY : moc_histogramChart.cxx.i
+
+moc_histogramChart.s: moc_histogramChart.cxx.s
+.PHONY : moc_histogramChart.s
+
+# target to generate assembly for a file
+moc_histogramChart.cxx.s:
+	$(MAKE) -f CMakeFiles/Corals.dir/build.make CMakeFiles/Corals.dir/moc_histogramChart.cxx.s
+.PHONY : moc_histogramChart.cxx.s
 
 moc_volumeRendering.o: moc_volumeRendering.cxx.o
 .PHONY : moc_volumeRendering.o
@@ -243,12 +291,18 @@ help:
 	@echo "... MainWindow.o"
 	@echo "... MainWindow.i"
 	@echo "... MainWindow.s"
+	@echo "... histogramChart.o"
+	@echo "... histogramChart.i"
+	@echo "... histogramChart.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... moc_MainWindow.o"
 	@echo "... moc_MainWindow.i"
 	@echo "... moc_MainWindow.s"
+	@echo "... moc_histogramChart.o"
+	@echo "... moc_histogramChart.i"
+	@echo "... moc_histogramChart.s"
 	@echo "... moc_volumeRendering.o"
 	@echo "... moc_volumeRendering.i"
 	@echo "... moc_volumeRendering.s"
