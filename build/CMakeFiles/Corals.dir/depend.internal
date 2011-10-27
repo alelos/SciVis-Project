@@ -5,17 +5,29 @@ CMakeFiles/Corals.dir/MainWindow.cpp.o
  /Library/Frameworks/QtCore.framework/Headers/QCoreApplication
  /Library/Frameworks/QtCore.framework/Headers/QObject
  /Library/Frameworks/QtCore.framework/Headers/QObject.h
+ /Library/Frameworks/QtCore.framework/Headers/QString
+ /Library/Frameworks/QtCore.framework/Headers/QStringList
  /Library/Frameworks/QtCore.framework/Headers/qcoreapplication.h
  /Library/Frameworks/QtCore.framework/Headers/qobject.h
+ /Library/Frameworks/QtCore.framework/Headers/qstring.h
+ /Library/Frameworks/QtCore.framework/Headers/qstringlist.h
  /Library/Frameworks/QtGui.framework/Headers/QGridLayout
  /Library/Frameworks/QtGui.framework/Headers/QGroupBox
  /Library/Frameworks/QtGui.framework/Headers/QHBoxLayout
+ /Library/Frameworks/QtGui.framework/Headers/QHeaderView
+ /Library/Frameworks/QtGui.framework/Headers/QLabel
+ /Library/Frameworks/QtGui.framework/Headers/QLineEdit
  /Library/Frameworks/QtGui.framework/Headers/QPushButton
+ /Library/Frameworks/QtGui.framework/Headers/QTableWidget
  /Library/Frameworks/QtGui.framework/Headers/QWidget
  /Library/Frameworks/QtGui.framework/Headers/qboxlayout.h
  /Library/Frameworks/QtGui.framework/Headers/qgridlayout.h
  /Library/Frameworks/QtGui.framework/Headers/qgroupbox.h
+ /Library/Frameworks/QtGui.framework/Headers/qheaderview.h
+ /Library/Frameworks/QtGui.framework/Headers/qlabel.h
+ /Library/Frameworks/QtGui.framework/Headers/qlineedit.h
  /Library/Frameworks/QtGui.framework/Headers/qpushbutton.h
+ /Library/Frameworks/QtGui.framework/Headers/qtablewidget.h
  /Library/Frameworks/QtGui.framework/Headers/qwidget.h
  /Users/alelos/Desktop/SciVis-Project/MainWindow.cpp
  /Users/alelos/Desktop/SciVis-Project/MainWindow.h
@@ -139,19 +151,23 @@ CMakeFiles/Corals.dir/main.cpp.o
  /Library/Frameworks/QtCore.framework/Headers/QCoreApplication
  /Library/Frameworks/QtCore.framework/Headers/QObject
  /Library/Frameworks/QtCore.framework/Headers/QObject.h
+ /Library/Frameworks/QtCore.framework/Headers/QString
+ /Library/Frameworks/QtCore.framework/Headers/QStringList
  /Library/Frameworks/QtCore.framework/Headers/qcoreapplication.h
  /Library/Frameworks/QtCore.framework/Headers/qobject.h
+ /Library/Frameworks/QtCore.framework/Headers/qstring.h
+ /Library/Frameworks/QtCore.framework/Headers/qstringlist.h
  /Library/Frameworks/QtGui.framework/Headers/QApplication
  /Library/Frameworks/QtGui.framework/Headers/QGridLayout
  /Library/Frameworks/QtGui.framework/Headers/QGroupBox
  /Library/Frameworks/QtGui.framework/Headers/QHBoxLayout
- /Library/Frameworks/QtGui.framework/Headers/QPushButton
+ /Library/Frameworks/QtGui.framework/Headers/QTableWidget
  /Library/Frameworks/QtGui.framework/Headers/QWidget
  /Library/Frameworks/QtGui.framework/Headers/qapplication.h
  /Library/Frameworks/QtGui.framework/Headers/qboxlayout.h
  /Library/Frameworks/QtGui.framework/Headers/qgridlayout.h
  /Library/Frameworks/QtGui.framework/Headers/qgroupbox.h
- /Library/Frameworks/QtGui.framework/Headers/qpushbutton.h
+ /Library/Frameworks/QtGui.framework/Headers/qtablewidget.h
  /Library/Frameworks/QtGui.framework/Headers/qwidget.h
  /Users/alelos/Desktop/SciVis-Project/MainWindow.h
  /Users/alelos/Desktop/SciVis-Project/histogramChart.h
@@ -221,17 +237,21 @@ CMakeFiles/Corals.dir/moc_MainWindow.cxx.o
  /Library/Frameworks/QtCore.framework/Headers/QCoreApplication
  /Library/Frameworks/QtCore.framework/Headers/QObject
  /Library/Frameworks/QtCore.framework/Headers/QObject.h
+ /Library/Frameworks/QtCore.framework/Headers/QString
+ /Library/Frameworks/QtCore.framework/Headers/QStringList
  /Library/Frameworks/QtCore.framework/Headers/qcoreapplication.h
  /Library/Frameworks/QtCore.framework/Headers/qobject.h
+ /Library/Frameworks/QtCore.framework/Headers/qstring.h
+ /Library/Frameworks/QtCore.framework/Headers/qstringlist.h
  /Library/Frameworks/QtGui.framework/Headers/QGridLayout
  /Library/Frameworks/QtGui.framework/Headers/QGroupBox
  /Library/Frameworks/QtGui.framework/Headers/QHBoxLayout
- /Library/Frameworks/QtGui.framework/Headers/QPushButton
+ /Library/Frameworks/QtGui.framework/Headers/QTableWidget
  /Library/Frameworks/QtGui.framework/Headers/QWidget
  /Library/Frameworks/QtGui.framework/Headers/qboxlayout.h
  /Library/Frameworks/QtGui.framework/Headers/qgridlayout.h
  /Library/Frameworks/QtGui.framework/Headers/qgroupbox.h
- /Library/Frameworks/QtGui.framework/Headers/qpushbutton.h
+ /Library/Frameworks/QtGui.framework/Headers/qtablewidget.h
  /Library/Frameworks/QtGui.framework/Headers/qwidget.h
  /Users/alelos/Desktop/SciVis-Project/build/../MainWindow.h
  /Users/alelos/Desktop/SciVis-Project/build/../histogramChart.h
@@ -388,7 +408,6 @@ CMakeFiles/Corals.dir/moc_volumeRendering.cxx.o
  /usr/local/include/vtk-5.8/vtkProp.h
  /usr/local/include/vtk-5.8/vtkProp3D.h
  /usr/local/include/vtk-5.8/vtkPropCollection.h
- /usr/local/include/vtk-5.8/vtkRenderWindow.h
  /usr/local/include/vtk-5.8/vtkRenderWindowInteractor.h
  /usr/local/include/vtk-5.8/vtkRenderer.h
  /usr/local/include/vtk-5.8/vtkScalarsToColors.h
@@ -410,7 +429,6 @@ CMakeFiles/Corals.dir/moc_volumeRendering.cxx.o
  /usr/local/include/vtk-5.8/vtkVolumeProperty.h
  /usr/local/include/vtk-5.8/vtkWeakPointerBase.h
  /usr/local/include/vtk-5.8/vtkWin32Header.h
- /usr/local/include/vtk-5.8/vtkWindow.h
 CMakeFiles/Corals.dir/volumeRendering.cpp.o
  /Library/Frameworks/QtCore.framework/Headers/QObject
  /Library/Frameworks/QtCore.framework/Headers/qobject.h

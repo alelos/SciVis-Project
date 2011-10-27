@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'Connector.h'
 **
-** Created: Mon Oct 24 15:10:47 2011
+** Created: Tue Oct 25 11:22:02 2011
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.7.0)
 **
 ** WARNING! All changes made in this file will be lost!

@@ -34,6 +34,9 @@ void MainWindow::setupLoginBox(){
 
     QPushButton *uploadButton = new QPushButton("Upload") ;
     QPushButton *quitButton = new QPushButton("Quit") ;
+    QPushButton *moreSettingsTime = new QPushButton("Set time") ;
+    moreSettingsTime->setCheckable(true) ;
+
     QLabel *labelUserName = new QLabel("Username:") ;
     labelUserName->setBuddy(l_username);
 
@@ -46,13 +49,22 @@ void MainWindow::setupLoginBox(){
     labelPassVNC->setBuddy(l_passVNC);
 
     // Set the fields to fill in the time you need for the vnc session
+    QWidget *extension = new QWidget ;
+    QGridLayout *extensionLayout = new QGridLayout ;
     QLabel *labelHours = new QLabel("Hours") ;
     QLineEdit *hours = new QLineEdit ;
-    hours->setMaxLength(1) ;
     QLabel *labelMinutes = new QLabel("Minutes") ;
     QLineEdit *minutes = new QLineEdit ;
     QLabel *labelSeconds = new QLabel("Seconds") ;
     QLineEdit *seconds = new QLineEdit ;
+    extensionLayout->addWidget(labelHours, 0,0) ;
+    extensionLayout->addWidget(hours,0,1) ;
+    extensionLayout->addWidget(labelMinutes,0,2) ;
+    extensionLayout->addWidget(minutes,0,3) ;
+    extensionLayout->addWidget(labelSeconds,0,4) ;
+    extensionLayout->addWidget(seconds,0,5) ;
+    extension->setLayout(extensionLayout) ;
+    connect(moreSettingsTime, SIGNAL(toggled(bool)), extension, SLOT(setVisible(bool))) ;
 
     // Connecting the string fields with the connector variables of username and the 2 passwords
     // Also connection the string fields with the button to disable it if all 3 of them are not full
@@ -78,35 +90,22 @@ void MainWindow::setupLoginBox(){
     mainLayout->addWidget(l_passVNC, 2, 1);
     mainLayout->addWidget(uploadButton, 0, 2);
     mainLayout->addWidget(loginButton, 1, 2);
-    mainLayout->addWidget(quitButton, 2, 2) ;
+    mainLayout->addWidget(moreSettingsTime, 2, 2) ;
+    mainLayout->addWidget(extension,3,0,1,3) ;
+    /*  
     mainLayout->addWidget(labelHours, 3, 0) ;
     mainLayout->addWidget(hours, 3, 1) ;
     mainLayout->addWidget(labelMinutes, 3, 2) ;
     mainLayout->addWidget(minutes, 3, 3) ;
     mainLayout->addWidget(labelSeconds,3, 4) ;
     mainLayout->addWidget(seconds, 3, 5) ;
+    */
     loginBox->setLayout(mainLayout);
+    extension->hide() ;
 }
 
-/*  
-void MainWindow::setupProgram() {
-    process = new QProcess(this) ;
-    //program->setProcessChannelMode(QProcess::MergedChannels) ;
-    QString program = "ssh" ;
-    QString arg = "alelos@145.116.14.95" ;
-    process->start(program, QStringList() << arg) ;
-    process->setProcessChannelMode(QProcess::MergedChannels);
 
-    process->waitForStarted() ;
-
-    connect(process, SIGNAL(readyReadStandardOutput()), this, SLOT(writeToSlots())) ;
-}
-*/
-
-void MainWindow::writeToSlots() {
-    //output->append(process->readAllStandardOutput()) ;
-}
-
+// Disable the login button if all the fields are not completed
 void MainWindow::enableLoginButton() {
     if (l_username->text().isEmpty() || l_passSara->text().isEmpty() || l_passVNC->text().isEmpty()) {
         loginButton->setDisabled(true);

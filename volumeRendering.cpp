@@ -16,14 +16,15 @@ VolumeRendering::VolumeRendering(string dirname) :
         exit(EXIT_FAILURE) ;
     } 
 
-    setupTransferFunctions() ; 
+    //setupTransferFunctions() ; 
+	setupDefaultTransferFunctions (0, 255) ; 
     setupVolume() ;
 
     renderWindow->SetSize(600, 600) ;
 
     renderer->AddVolume(volume) ;
     renderer->ResetCamera() ;
-    startRendering() ;
+    //startRendering() ;
 }
 
 VolumeRendering::~VolumeRendering() {
@@ -40,10 +41,14 @@ void VolumeRendering::setupReader() {
 void VolumeRendering::setupRenderer() {
     renderer = vtkRenderer::New() ; 
     renderWindow = vtkRenderWindow::New() ;
-    renderWindow->AddRenderer(renderer) ;
-    iren = new QVTKWidget ;
 
-    iren->SetRenderWindow(renderWindow) ;
+    //renderWindow->AddRenderer(renderer) ;
+    //renderWindow->SetInteractor(iren) ;
+
+    qvtkWidget = new QVTKWidget ;
+    qvtkWidget->GetRenderWindow()->AddRenderer(renderer) ;
+
+    //iren->SetRenderWindow(renderWindow) ;
 }
 
 void VolumeRendering::setupVolume() {
@@ -98,6 +103,34 @@ void VolumeRendering::setupTransferFunctions() {
 
 }
 
+void VolumeRendering::setupDefaultTransferFunctions (int minValue, int maxValue) {
+	colorFun = vtkColorTransferFunction::New(); 
+	opacityFun = vtkPiecewiseFunction::New() ;
+	
+	// Opacity function
+	opacityFun->AddPoint (minValue, 0.0) ; 
+	opacityFun->AddPoint ((int)((maxValue - minValue) / 3), 1) ; 
+	opacityFun->AddPoint (maxValue, 1) ; 
+	colorFun->AddRGBPoint (minValue, .85, .85, .098) ; 
+	colorFun->AddRGBPoint ((int)(maxValue / 2), .137, .419, .556) ; 
+}
+
 void VolumeRendering::startRendering() {
-    renderWindow->Render() ;
+    renderer->GetRenderWindow()->Render() ;
+    qvtkWidget->update() ;
+}
+
+void VolumeRendering::setOpacityFunction(int startPoint, float startValue, int endPoint, float endValue) {
+    opacityFun->RemoveAllPoints() ;
+    opacityFun->AddSegment(startPoint, startValue, endPoint, endValue) ;
+    volume->Modified() ;
+}
+
+void VolumeRendering::clearAllPoints() {
+    opacityFun->RemoveAllPoints() ;
+}
+
+void VolumeRendering::removeOpacityPoints() {
+    
+}
 }

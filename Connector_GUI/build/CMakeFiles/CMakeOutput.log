@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/Users/alelos/Desktop/Connector/build/CMakeFiles/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/CMakeFiles/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/local/bin/c++ 
@@ -23,27 +23,27 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/Users/alelos/Desktop/Connector/build/CMakeFiles/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/CMakeFiles/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /Users/alelos/Desktop/Connector/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/CMakeFiles/CMakeTmp
 
 Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
 /usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
-"/Applications/CMake 2.8-4.app/Contents/bin/cmake" -E cmake_progress_report /Users/alelos/Desktop/Connector/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+"/Applications/CMake 2.8-4.app/Contents/bin/cmake" -E cmake_progress_report /Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/CMakeFiles/CMakeTmp/CMakeFiles 1
 Building C object CMakeFiles/cmTryCompileExec.dir/testCCompiler.c.o
-/usr/local/bin/gcc    -o CMakeFiles/cmTryCompileExec.dir/testCCompiler.c.o   -c /Users/alelos/Desktop/Connector/build/CMakeFiles/CMakeTmp/testCCompiler.c
+/usr/local/bin/gcc    -o CMakeFiles/cmTryCompileExec.dir/testCCompiler.c.o   -c /Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/CMakeFiles/CMakeTmp/testCCompiler.c
 Linking C executable cmTryCompileExec
 "/Applications/CMake 2.8-4.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
 /usr/local/bin/gcc      -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTryCompileExec.dir/testCCompiler.c.o  -o cmTryCompileExec  
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /Users/alelos/Desktop/Connector/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/CMakeFiles/CMakeTmp
 
 Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
 /usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
-"/Applications/CMake 2.8-4.app/Contents/bin/cmake" -E cmake_progress_report /Users/alelos/Desktop/Connector/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+"/Applications/CMake 2.8-4.app/Contents/bin/cmake" -E cmake_progress_report /Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/CMakeFiles/CMakeTmp/CMakeFiles 1
 Building C object CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o
 /usr/local/bin/gcc    -o CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o   -c "/Applications/CMake 2.8-4.app/Contents/share/cmake-2.8/Modules/CMakeCCompilerABI.c"
 Linking C executable cmTryCompileExec
@@ -76,11 +76,11 @@ Framework search paths:
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/alelos/Desktop/Connector/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/CMakeFiles/CMakeTmp]
   ignore line: []
   ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec/fast"]
   ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build]
-  ignore line: ["/Applications/CMake 2.8-4.app/Contents/bin/cmake" -E cmake_progress_report /Users/alelos/Desktop/Connector/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: ["/Applications/CMake 2.8-4.app/Contents/bin/cmake" -E cmake_progress_report /Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
   ignore line: [Building C object CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o]
   ignore line: [/usr/local/bin/gcc    -o CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o   -c "/Applications/CMake 2.8-4.app/Contents/share/cmake-2.8/Modules/CMakeCCompilerABI.c"]
   ignore line: [Linking C executable cmTryCompileExec]
@@ -133,24 +133,24 @@ Parsed C implicit link information from above output:
 
 
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /Users/alelos/Desktop/Connector/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/CMakeFiles/CMakeTmp
 
 Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
 /usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
-"/Applications/CMake 2.8-4.app/Contents/bin/cmake" -E cmake_progress_report /Users/alelos/Desktop/Connector/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+"/Applications/CMake 2.8-4.app/Contents/bin/cmake" -E cmake_progress_report /Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/CMakeFiles/CMakeTmp/CMakeFiles 1
 Building CXX object CMakeFiles/cmTryCompileExec.dir/testCXXCompiler.cxx.o
-/usr/local/bin/c++     -o CMakeFiles/cmTryCompileExec.dir/testCXXCompiler.cxx.o -c /Users/alelos/Desktop/Connector/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+/usr/local/bin/c++     -o CMakeFiles/cmTryCompileExec.dir/testCXXCompiler.cxx.o -c /Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
 Linking CXX executable cmTryCompileExec
 "/Applications/CMake 2.8-4.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
 /usr/local/bin/c++       -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTryCompileExec.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec  
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /Users/alelos/Desktop/Connector/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/CMakeFiles/CMakeTmp
 
 Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
 /usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
-"/Applications/CMake 2.8-4.app/Contents/bin/cmake" -E cmake_progress_report /Users/alelos/Desktop/Connector/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+"/Applications/CMake 2.8-4.app/Contents/bin/cmake" -E cmake_progress_report /Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/CMakeFiles/CMakeTmp/CMakeFiles 1
 Building CXX object CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o
 /usr/local/bin/c++     -o CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -c "/Applications/CMake 2.8-4.app/Contents/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp"
 Linking CXX executable cmTryCompileExec
@@ -183,11 +183,11 @@ Framework search paths:
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/alelos/Desktop/Connector/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/CMakeFiles/CMakeTmp]
   ignore line: []
   ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec/fast"]
   ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build]
-  ignore line: ["/Applications/CMake 2.8-4.app/Contents/bin/cmake" -E cmake_progress_report /Users/alelos/Desktop/Connector/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: ["/Applications/CMake 2.8-4.app/Contents/bin/cmake" -E cmake_progress_report /Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
   ignore line: [Building CXX object CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o]
   ignore line: [/usr/local/bin/c++     -o CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -c "/Applications/CMake 2.8-4.app/Contents/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp"]
   ignore line: [Linking CXX executable cmTryCompileExec]
@@ -241,20 +241,20 @@ Parsed CXX implicit link information from above output:
 
 
 Determining if the Q_WS_MAC exist passed with the following output:
-Change Dir: /Users/alelos/Desktop/Connector/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/CMakeFiles/CMakeTmp
 
 Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
 /usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
-"/Applications/CMake 2.8-4.app/Contents/bin/cmake" -E cmake_progress_report /Users/alelos/Desktop/Connector/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+"/Applications/CMake 2.8-4.app/Contents/bin/cmake" -E cmake_progress_report /Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/CMakeFiles/CMakeTmp/CMakeFiles 1
 Building C object CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o
-/usr/local/bin/gcc   -F/Library/Frameworks   -o CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o   -c /Users/alelos/Desktop/Connector/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-In file included from /Users/alelos/Desktop/Connector/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:0:
+/usr/local/bin/gcc   -F/Library/Frameworks   -o CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o   -c /Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+In file included from /Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:0:
 /Library/Frameworks/QtCore.framework/Headers/qglobal.h:320:6: warning: #warning "This version of Mac OS X is unsupported" [-Wcpp]
 Linking C executable cmTryCompileExec
 "/Applications/CMake 2.8-4.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
 /usr/local/bin/gcc      -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o  -o cmTryCompileExec  
 
-File /Users/alelos/Desktop/Connector/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <QtCore/qglobal.h>
 
@@ -268,18 +268,18 @@ int main()
 }
 
 Determining if the QT_MAC_USE_COCOA exist passed with the following output:
-Change Dir: /Users/alelos/Desktop/Connector/build/CMakeFiles/CMakeTmp
+Change Dir: /Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/CMakeFiles/CMakeTmp
 
 Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
 /usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
-"/Applications/CMake 2.8-4.app/Contents/bin/cmake" -E cmake_progress_report /Users/alelos/Desktop/Connector/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+"/Applications/CMake 2.8-4.app/Contents/bin/cmake" -E cmake_progress_report /Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/CMakeFiles/CMakeTmp/CMakeFiles 1
 Building C object CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o
-/usr/local/bin/gcc   -F/Library/Frameworks   -o CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o   -c /Users/alelos/Desktop/Connector/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/usr/local/bin/gcc   -F/Library/Frameworks   -o CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o   -c /Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 Linking C executable cmTryCompileExec
 "/Applications/CMake 2.8-4.app/Contents/bin/cmake" -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
 /usr/local/bin/gcc      -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o  -o cmTryCompileExec  
 
-File /Users/alelos/Desktop/Connector/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <QtCore/qconfig.h>
 

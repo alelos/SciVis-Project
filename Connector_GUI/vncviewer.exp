@@ -1,0 +1,51 @@
+#!/usr/bin/expect -f
+# Expect script for connecting to a VNC server on the RVS cluster
+#
+# NOTE! IMPORTANT
+# 	This script expects that TurboVNC is installed
+#	on the usual location:
+#	/opt/TurboVNC/bin/vncviewer 
+#
+# Arguments:
+# 	password = Password of remote UNIX server, for root user.
+#	vncPassword = Password for the VNC session 
+# 	ipaddr = IP Addreess of remote UNIX server
+# 	username = Username of the remote UNIX server. 
+#	node = the node of the VNC server to which to connect
+#
+# For example:
+#  ./vncviewer.exp <password> <vncPassword> <ipaddr> <username> <node>
+# ------------------------------------------------------------------------
+# Writing for the microCT scans project for Scientific Visualization
+#
+# Author: Louis Dijkstra
+# Date: October 2011
+# -------------------------------------------------------------------------
+
+# set Variables
+set password [lrange $argv 0 0] 
+set vncPassword [lrange $argv 1 1]
+set ipaddr [lrange $argv 2 2]   
+set username [lrange $argv 3 3] 
+set node [lrange $argv 4 4]
+set timeout -1   
+
+# Setting up the connection
+# old spawn /opt/TurboVNC/bin/vncviewer -via $username@$ipaddr v40-$node:1
+spawn /opt/TurboVNC/bin/vncviewer v42-$node.rdr.sara.nl:1
+
+# Look for the password prompt
+#expect "*?assword:*"
+
+# Send password:
+#send -- "$password\r"
+
+# Look for the password prompt
+expect "*?assword:*"
+
+# Send password:
+send -- "$vncPassword\r"
+
+# send blank line (\r) to make sure we get back to gui
+send -- "\r"
+expect eof

@@ -46,20 +46,23 @@ class VolumeRendering : public QObject {
     public:
         VolumeRendering(string dirname) ;
         ~VolumeRendering() ;
-        inline QVTKWidget* getRenderWindow(){ return iren ; }
+        inline QVTKWidget* getRenderWindow(){ return qvtkWidget ; }
         void setupReader() ;
+        void setupDefaultTransferFunctions (int minValue, int maxValue) ; 
         void setupRenderer() ;
         void setupTransferFunctions() ;
         void setupVolume() ;
     public slots:
         //TODO functions to change color and opacity functions depending on the UI sliders.
         void startRendering() ;
+        void setOpacityFunction(int startPoint, float startValue, int endPoint, float endValue) ;
+        void clearAllPoints() ;
     private:
         string dirname ;
         vtkDICOMImageReader *DICOMreader ;
         vtkRenderer *renderer ;
         vtkRenderWindow *renderWindow ;
-        QVTKWidget *iren ;
+        QVTKWidget *qvtkWidget ;
         vtkSmartVolumeMapper *mapper ;
         vtkVolume *volume ;
         vtkVolumeProperty *property ;

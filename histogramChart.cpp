@@ -22,7 +22,7 @@
 Histogram::Histogram(string fl) : filename(fl), ignoreZero(0), numComponents(0), xmax(0), ymax(0) {
     
     reader = vtkSmartPointer<vtkDICOMImageReader>::New() ;
-    reader->SetFileName(filename.c_str()) ;
+    reader->SetDirectoryName(filename.c_str()) ;
     plot = vtkSmartPointer<vtkXYPlotActor>::New() ;
     numComponents = reader->GetOutput()->GetNumberOfScalarComponents() ;
 
@@ -32,6 +32,7 @@ Histogram::Histogram(string fl) : filename(fl), ignoreZero(0), numComponents(0),
     renderer->AddActor(plot) ;
     renderWindow = vtkSmartPointer<vtkRenderWindow>::New() ;
     renderWindow->AddRenderer(renderer) ;
+    renderWindow->SetSize(600,480) ;
     iren = new QVTKWidget ;
     iren->SetRenderWindow(renderWindow) ;
 
@@ -67,6 +68,9 @@ void Histogram::drawPlot() {
             ymax = histo->GetOutput()->GetScalarRange()[1];
         }
 
+        plot->SetXTitle("Value") ;
+        plot->SetYTitle("Frequency") ;
+        plot->SetLabelFormat("%g") ;
         plot->AddInput( histo->GetOutput() );
 
         /*  

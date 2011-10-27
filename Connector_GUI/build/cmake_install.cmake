@@ -1,4 +1,4 @@
-# Install script for directory: /Users/alelos/Desktop/Connector
+# Install script for directory: /Users/alelos/Desktop/SciVis-Project/Connector_GUI
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,7 +33,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/Users/alelos/Desktop/Connector/build/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/Users/alelos/Desktop/Connector/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

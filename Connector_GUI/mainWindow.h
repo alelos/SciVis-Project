@@ -28,7 +28,6 @@ public:
     ~MainWindow();
 public slots:
     void enableLoginButton() ;
-    void writeToSlots() ;
     void execute() ;
     void logoutAndQuit() ;
 private:

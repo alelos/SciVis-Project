@@ -4,11 +4,11 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/alelos/Desktop/Connector/Connector.cpp" "/Users/alelos/Desktop/Connector/build/CMakeFiles/Connector.dir/Connector.cpp.o"
-  "/Users/alelos/Desktop/Connector/main.cpp" "/Users/alelos/Desktop/Connector/build/CMakeFiles/Connector.dir/main.cpp.o"
-  "/Users/alelos/Desktop/Connector/mainWindow.cpp" "/Users/alelos/Desktop/Connector/build/CMakeFiles/Connector.dir/mainWindow.cpp.o"
-  "/Users/alelos/Desktop/Connector/build/moc_Connector.cxx" "/Users/alelos/Desktop/Connector/build/CMakeFiles/Connector.dir/moc_Connector.cxx.o"
-  "/Users/alelos/Desktop/Connector/build/moc_mainWindow.cxx" "/Users/alelos/Desktop/Connector/build/CMakeFiles/Connector.dir/moc_mainWindow.cxx.o"
+  "/Users/alelos/Desktop/SciVis-Project/Connector_GUI/Connector.cpp" "/Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/CMakeFiles/Connector.dir/Connector.cpp.o"
+  "/Users/alelos/Desktop/SciVis-Project/Connector_GUI/main.cpp" "/Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/CMakeFiles/Connector.dir/main.cpp.o"
+  "/Users/alelos/Desktop/SciVis-Project/Connector_GUI/mainWindow.cpp" "/Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/CMakeFiles/Connector.dir/mainWindow.cpp.o"
+  "/Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/moc_Connector.cxx" "/Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/CMakeFiles/Connector.dir/moc_Connector.cxx.o"
+  "/Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/moc_mainWindow.cxx" "/Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/CMakeFiles/Connector.dir/moc_mainWindow.cxx.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

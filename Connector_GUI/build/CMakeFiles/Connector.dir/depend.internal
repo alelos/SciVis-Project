@@ -22,8 +22,8 @@ CMakeFiles/Connector.dir/Connector.cpp.o
  /Library/Frameworks/QtGui.framework/Headers/qmessagebox.h
  /Library/Frameworks/QtGui.framework/Headers/qpalette.h
  /Library/Frameworks/QtGui.framework/Headers/qtextedit.h
- /Users/alelos/Desktop/Connector/Connector.cpp
- /Users/alelos/Desktop/Connector/Connector.h
+ /Users/alelos/Desktop/SciVis-Project/Connector_GUI/Connector.cpp
+ /Users/alelos/Desktop/SciVis-Project/Connector_GUI/Connector.h
 CMakeFiles/Connector.dir/main.cpp.o
  /Library/Frameworks/QtCore.framework/Headers/QCoreApplication
  /Library/Frameworks/QtCore.framework/Headers/QFuture
@@ -65,9 +65,9 @@ CMakeFiles/Connector.dir/main.cpp.o
  /Library/Frameworks/QtGui.framework/Headers/qpushbutton.h
  /Library/Frameworks/QtGui.framework/Headers/qtextedit.h
  /Library/Frameworks/QtGui.framework/Headers/qwidget.h
- /Users/alelos/Desktop/Connector/Connector.h
- /Users/alelos/Desktop/Connector/main.cpp
- /Users/alelos/Desktop/Connector/mainwindow.h
+ /Users/alelos/Desktop/SciVis-Project/Connector_GUI/Connector.h
+ /Users/alelos/Desktop/SciVis-Project/Connector_GUI/main.cpp
+ /Users/alelos/Desktop/SciVis-Project/Connector_GUI/mainwindow.h
 CMakeFiles/Connector.dir/mainWindow.cpp.o
  /Library/Frameworks/QtCore.framework/Headers/QCoreApplication
  /Library/Frameworks/QtCore.framework/Headers/QFuture
@@ -109,9 +109,9 @@ CMakeFiles/Connector.dir/mainWindow.cpp.o
  /Library/Frameworks/QtGui.framework/Headers/qpushbutton.h
  /Library/Frameworks/QtGui.framework/Headers/qtextedit.h
  /Library/Frameworks/QtGui.framework/Headers/qwidget.h
- /Users/alelos/Desktop/Connector/Connector.h
- /Users/alelos/Desktop/Connector/mainWindow.cpp
- /Users/alelos/Desktop/Connector/mainwindow.h
+ /Users/alelos/Desktop/SciVis-Project/Connector_GUI/Connector.h
+ /Users/alelos/Desktop/SciVis-Project/Connector_GUI/mainWindow.cpp
+ /Users/alelos/Desktop/SciVis-Project/Connector_GUI/mainwindow.h
 CMakeFiles/Connector.dir/moc_Connector.cxx.o
  /Library/Frameworks/QtCore.framework/Headers/QCoreApplication
  /Library/Frameworks/QtCore.framework/Headers/QObject
@@ -133,8 +133,8 @@ CMakeFiles/Connector.dir/moc_Connector.cxx.o
  /Library/Frameworks/QtGui.framework/Headers/qmessagebox.h
  /Library/Frameworks/QtGui.framework/Headers/qpalette.h
  /Library/Frameworks/QtGui.framework/Headers/qtextedit.h
- /Users/alelos/Desktop/Connector/build/../Connector.h
- /Users/alelos/Desktop/Connector/build/moc_Connector.cxx
+ /Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/../Connector.h
+ /Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/moc_Connector.cxx
 CMakeFiles/Connector.dir/moc_mainWindow.cxx.o
  /Library/Frameworks/QtCore.framework/Headers/QCoreApplication
  /Library/Frameworks/QtCore.framework/Headers/QFuture
@@ -176,6 +176,6 @@ CMakeFiles/Connector.dir/moc_mainWindow.cxx.o
  /Library/Frameworks/QtGui.framework/Headers/qpushbutton.h
  /Library/Frameworks/QtGui.framework/Headers/qtextedit.h
  /Library/Frameworks/QtGui.framework/Headers/qwidget.h
- /Users/alelos/Desktop/Connector/build/../Connector.h
- /Users/alelos/Desktop/Connector/build/../mainWindow.h
- /Users/alelos/Desktop/Connector/build/moc_mainWindow.cxx
+ /Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/../Connector.h
+ /Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/../mainWindow.h
+ /Users/alelos/Desktop/SciVis-Project/Connector_GUI/build/moc_mainWindow.cxx

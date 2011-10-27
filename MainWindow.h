@@ -24,9 +24,11 @@
 #include <QCoreApplication>
 #include <QGridLayout>
 #include <QGroupBox>
+#include <QStringList>
 #include <QHBoxLayout>
+#include <QString>
 #include <string>
-#include <QPushButton>
+#include <QTableWidget>
 #include "histogramChart.h"
 #include "volumeRendering.h"
 
@@ -48,10 +50,19 @@ class MainWindow : public QMainWindow {
         MainWindow(string dirname, string filename, QWidget *parent = 0) ;       // Constructor 
         ~MainWindow() ;                         // Destructor 
         void createSettingsBox() ;                   // Function to set up the settings part of the gui
+        void createOpacityBox() ;
+    public slots:
+        void addOpacityPoints() ;
+        void addOpacityRow() ;
+        void rowToRemove(QString r) ;
+        void removeOpacityPoints() ;
     private:
         QGroupBox *settingsBox ;                // Widget for the settings
+        QGroupBox *opacityBox ;
+        QTableWidget *opacityTable ; 
         QWidget *center ;
         VolumeRendering vr ;
         Histogram h ;
+        int m_rowToRemove ;
 } ;
 #endif   // ----- #ifndef MAINWINDOW_H_INC  ----- 

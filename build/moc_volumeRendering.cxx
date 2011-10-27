@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'volumeRendering.h'
 **
-** Created: Sat Oct 15 17:17:46 2011
+** Created: Thu Oct 27 11:34:56 2011
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.7.0)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_VolumeRendering[] = {
        5,       // revision
        0,       // classname
        0,    0, // classinfo
-       1,   14, // methods
+       3,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -32,12 +32,17 @@ static const uint qt_meta_data_VolumeRendering[] = {
 
  // slots: signature, parameters, type, tag, flags
       17,   16,   16,   16, 0x0a,
+      74,   34,   16,   16, 0x0a,
+     114,   16,   16,   16, 0x0a,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_VolumeRendering[] = {
     "VolumeRendering\0\0startRendering()\0"
+    "startPoint,startValue,endPoint,endValue\0"
+    "setOpacityFunction(int,float,int,float)\0"
+    "clearAllPoints()\0"
 };
 
 const QMetaObject VolumeRendering::staticMetaObject = {
@@ -70,9 +75,11 @@ int VolumeRendering::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: startRendering(); break;
+        case 1: setOpacityFunction((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< float(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3])),(*reinterpret_cast< float(*)>(_a[4]))); break;
+        case 2: clearAllPoints(); break;
         default: ;
         }
-        _id -= 1;
+        _id -= 3;
     }
     return _id;
 }

@@ -1,0 +1,43 @@
+#!/usr/bin/expect -f
+# Expect script for SCP 
+#
+# Arguments:
+#
+# 	password = Password of remote UNIX server, for root user.
+# 	ipaddr = IP Addreess of remote UNIX server
+# 	username = Username of the remote UNIX server. 
+#	path = path to a directory/file that needs to be sended 
+#	resultingPath = the directory at the UNIX server where the file should be stored
+#
+# For example:
+#  ./scp.exp <password> <server> <username> <path> 
+# ------------------------------------------------------------------------
+# Writing for the microCT scans project for Scientific Visualization
+#
+# Author: Louis Dijkstra
+# Date: October 2011
+# -------------------------------------------------------------------------
+
+# set Variables
+set password [lrange $argv 0 0] 
+set ipaddr [lrange $argv 1 1]   
+set username [lrange $argv 2 2] 
+set path [lrange $argv 3 3]
+set resultingPath [lrange $argv 4 4]
+set timeout -1   
+
+# SCP
+#log_user 0
+spawn scp  $path $username@$ipaddr:$resultingPath 
+
+# Look for the password prompt
+expect "*?assword:*"
+
+# Send password:
+send -- "$password\r"
+expect -re "(\[0-9]\[0-9] | 100)" {
+    puts $expect_out(1,string)
+}
+# send blank line (\r) to make sure we get back to gui
+send -- "\r"
+expect eof
